@@ -1,0 +1,4 @@
+/firmware/output/
+/firmware/src/*.err
+/.vscode/
+

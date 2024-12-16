@@ -1,0 +1,226 @@
+[PROJECT]
+Target=..\output\elevator.hex
+Processor_Text=PIC18F67K22
+CCSVerions=5.105
+Compiler=PCH
+Development_Mode=
+ToolSuite=CCS
+CCSVersion=5.118
+[Target Data]
+FileList=$linker.c
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+[Directories]
+Include=
+Library=
+LinkerScript=
+output=..\output\
+[mru-list]
+1=..\output\elevator.c
+
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+expandtree=0
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+
+[defines]
+enabled=0
+chip=1
+D1=
+V1=
+buildcount=41
+
+[main.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+
+[CompilerVersion]
+Fixed=
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+2=main.h
+t2=1
+3=adc.c
+t3=1
+4=hardware.c
+t4=1
+5=tempr.c
+t5=1
+6=tc72.c
+t6=1
+[..\output\misc_IOs.c]
+Type=4
+
+[ProjectLog]
+Days=14
+D1=08-09-2024
+D1_L=4
+D1_L1=[66257]Project Opened.
+D1_L2=[66782]Started Editing.
+D1_L3=[66858]Stopped Editing.
+TotalEdit=33
+TotalDebug=0
+D1_E=2
+D1_D=0
+D1_L4=[66858]Project Closed.
+D2=09-09-2024
+D2_L=2
+D2_L1=[81226]Project Opened.
+D2_L2=[82042]Project Closed.
+D3=12-09-2024
+D3_L=4
+D3_L1=[47660]Project Opened.
+D3_L2=[47706]Started Editing.
+D3_L3=[48006]Stopped Editing.
+D3_E=1
+D3_D=0
+D3_L4=[48235]Project Closed.
+D4=19-09-2024
+D4_L=6
+D4_L1=[37010]Project Opened.
+D4_L2=[37654]Project Closed.
+D4_L3=[53888]Project Opened.
+D4_L4=[53888]Project Closed.
+D4_L5=[53889]Project Opened.
+D4_L6=[53902]Project Closed.
+D5=17-10-2024
+D5_L=14
+D5_L1=[51200]Project Opened.
+D5_L2=[51221]Started Editing.
+D5_L3=[51226]Stopped Editing.
+D5_E=7
+D5_D=0
+D5_L4=[51278]Started Editing.
+D5_L5=[51375]Stopped Editing.
+D5_L6=[51376]Project Closed.
+D5_L7=[51443]Project Opened.
+D5_L8=[51443]Project Closed.
+D5_L9=[51443]Project Opened.
+D5_L10=[51482]Started Editing.
+D5_L11=[51792]Stopped Editing.
+D5_L12=[52190]Started Editing.
+D5_L13=[52377]Stopped Editing.
+D5_L14=[52377]Project Closed.
+D6=19-10-2024
+D6_L=2
+D6_L1=[839]Project Opened.
+D6_L2=[2430]Project Closed.
+D7=23-10-2024
+D7_L=14
+D7_L1=[72902]Project Opened.
+D7_L2=[72959]Project Closed.
+D7_L3=[72964]Project Opened.
+D7_L4=[73239]Started Editing.
+D7_L5=[73539]Stopped Editing.
+D7_L6=[73589]Started Editing.
+D7_L7=[74037]Stopped Editing.
+D7_E=9
+D7_D=0
+D7_L8=[74276]Started Editing.
+D7_L9=[74614]Stopped Editing.
+D7_L10=[77127]Started Editing.
+D7_L11=[77431]Stopped Editing.
+D7_L12=[79122]Started Editing.
+D7_L13=[79407]Stopped Editing.
+D7_L14=[79408]Project Closed.
+D8=24-10-2024
+D8_L=4
+D8_L1=[41583]Project Opened.
+D8_L2=[41627]Started Editing.
+D8_L3=[41954]Stopped Editing.
+D8_E=1
+D8_D=0
+D8_L4=[42029]Project Closed.
+D9=30-10-2024
+D9_L=7
+D9_L1=[55916]Project Opened.
+D9_L2=[55921]Started Editing.
+D9_L3=[55967]Stopped Editing.
+D9_E=1
+D9_D=0
+D9_L4=[60780]Project Closed.
+D9_L5=[73891]Project Opened.
+D9_L6=[76881]Project Closed.
+D9_L7=[82323]Project Opened.
+D10=31-10-2024
+D10_L=1
+D10_L1=[285]Project Closed.
+D11=01-11-2024
+D11_L=2
+D11_L1=[38645]Project Opened.
+D11_L2=[38704]Project Closed.
+D12=06-11-2024
+D12_L=10
+D12_L1=[73511]Project Opened.
+D12_L2=[73538]Started Editing.
+D12_L3=[73564]Stopped Editing.
+D12_E=5
+D12_D=0
+D12_L4=[73582]Started Editing.
+D12_L5=[73756]Stopped Editing.
+D12_L6=[73804]Started Editing.
+D12_L7=[74106]Stopped Editing.
+D12_L8=[78663]Project Closed.
+D12_L9=[79133]Project Opened.
+D12_L10=[79140]Project Closed.
+D13=18-11-2024
+D13_L=12
+D13_L1=[38020]Project Opened.
+D13_L2=[38280]Started Editing.
+D13_L3=[38289]Stopped Editing.
+D13_E=4
+D13_D=0
+D13_L4=[39462]Started Editing.
+D13_L5=[39602]Stopped Editing.
+D13_L6=[39603]Project Closed.
+D13_L7=[47239]Project Opened.
+D13_L8=[55522]Project Closed.
+D13_L9=[77899]Project Opened.
+D13_L10=[78047]Started Editing.
+D13_L11=[78347]Stopped Editing.
+D13_L12=[81561]Project Closed.
+D14=05-12-2024
+D14_L=5
+D14_L1=[52500]Project Opened.
+D14_L2=[52543]Project Closed.
+D14_L3=[52546]Project Opened.
+D14_L4=[52560]Started Editing.
+D14_L5=[52723]Stopped Editing.
+D14_E=3
+D14_D=0
+[..\output\elevator.c]
+Type=4
+[..\..\..\UART_int_Tasks\Firmware\output\elevator.c]
+Type=4
+[Units]
+Count=7
+1=main
+2=hardware
+3=system
+4=timer
+5=scheduler
+6=adc
+7=tempr
+Link=1
