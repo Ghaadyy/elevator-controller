@@ -15,16 +15,16 @@
 #ifndef SCHEDULER_OPTIONS_H
 #define SCHEDULER_OPTIONS_H
 
-//#define	USE_MESSAGING	/*!<Enables s_tasks mailbox*/
+// #define	USE_MESSAGING	/*!<Enables s_tasks mailbox*/
 
-//#define	USE_SEMAPHORE	/*!<Enables semaphore handling*/
+// #define	USE_SEMAPHORE	/*!<Enables semaphore handling*/
 
-/*This provides optimized dispatching*/
-//#define	USE_RETIMER		/*!<Enables retimed synchronization*/
+/* This provides optimized dispatching */
+// #define	USE_RETIMER		/*!<Enables retimed synchronization*/
 
 /*comment if no busy LED is available */
-#if (defined(__PCH__) || defined(__PCD__)) /*CCS C compiler?*/
-//#define	USE_BUSY_LED	/*!<Enables busy LED indication*/
+#if (defined(__PCH__) || defined(__PCD__)) /* CCS C compiler? */
+// #define	USE_BUSY_LED	/*!<Enables busy LED indication*/
 #endif
 
 #ifdef USE_BUSY_LED
@@ -32,4 +32,4 @@
 #define BLEDOFF() output_low(PIN_C1)
 #endif
 #endif
-/*EOF*/
+/* EOF */

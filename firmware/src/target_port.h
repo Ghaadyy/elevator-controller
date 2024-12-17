@@ -40,10 +40,10 @@ typedef alt_u32 uint32_t;
 typedef alt_32 sint32_t;
 typedef uint32_t cntr_size_t;
 
-//#define	rom	?
+// #define	rom	?
 // misc
-//#define make8(Val, B)	(uint8)...	//extract byte B from Val
-//#define make16(H, L)	(uint16)...	//combine two bytes in 1 word
+// #define make8(Val, B)	(uint8)...	//extract byte B from Val
+// #define make16(H, L)	(uint16)...	//combine two bytes in 1 word
 #include <malloc.h>
 #include <string.h>
 #include <sys/alt_alarm.h>
@@ -97,4 +97,4 @@ typedef uint32_t cntr_size_t;
 
 #endif
 
-/*EOF*/
+/* EOF */

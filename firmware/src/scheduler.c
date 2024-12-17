@@ -173,7 +173,9 @@ void scheduler(void)
     cntr_size_t csys_tick_counter;
     cntr_size_t ticks_diff;
 
-#ifdef USE_RETIMER /*1st alternative: retimer is used for synchronization*/
+#ifdef USE_RETIMER
+    /* 1st alternative: retimer is used for synchronization */
+
     uint8_t prior_cycle_index = 0;     /*Priority index*/
     static cntr_size_t ticks_snap = 0; /*Ticks snapshot*/
     cntr_size_t elapsed_ticks;         /*Elapsed ticks counter*/
