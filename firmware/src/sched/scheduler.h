@@ -15,8 +15,8 @@
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
-#include "scheduler_options.h"
-#include "target_port.h"
+#include "../scheduler_options.h"
+#include "../target_port.h"
 
 #ifdef USE_MESSAGING
 /*Macro to check if message's available*/
