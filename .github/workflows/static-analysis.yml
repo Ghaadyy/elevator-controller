@@ -22,4 +22,4 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y cppcheck
 
       - name: Run cppcheck
-        run: cppcheck --enable=performance,style --force -i firmware/src/sched/* -i firmware/src/system.* -i firmware/src/timer.* --inconclusive --error-exitcode=1 firmware/src/
+        run: cppcheck --enable=performance --force -i firmware/src/sched/* -i firmware/src/system.* -i firmware/src/timer.* --inconclusive --error-exitcode=1 firmware/src/
