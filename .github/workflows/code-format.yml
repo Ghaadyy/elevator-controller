@@ -1,0 +1,26 @@
+name: Code Format
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install clang-format
+        run: sudo apt-get update && sudo apt-get install -y clang-format
+
+      - name: Run clang-format
+        run: |
+          find firmware/src/ -name '*.c' -o -name '*.h' | xargs clang-format -style=Microsoft --dry-run --Werror

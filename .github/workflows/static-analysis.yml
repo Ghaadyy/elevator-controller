@@ -1,0 +1,25 @@
+name: Static Analysis
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install cppcheck
+        run: sudo apt-get update && sudo apt-get install -y cppcheck
+
+      - name: Run cppcheck
+        run: cppcheck --enable=performance,style,unusedFunction --force -i firmware/src/scheduler.* -i firmware/src/system.* -i firmware/src/timer.* --inconclusive --error-exitcode=1 firmware/src/
