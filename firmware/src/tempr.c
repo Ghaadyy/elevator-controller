@@ -15,4 +15,5 @@
 
 float read_temperature(void)
 {
+    return 0;
 }
