@@ -40,7 +40,7 @@ enabled=0
 chip=1
 D1=
 V1=
-buildcount=41
+buildcount=43
 
 [main.c]
 Type=4
@@ -59,14 +59,14 @@ Fixed=
 [Opened Files]
 1=main.c
 t1=1
-Count=1
-2=main.h
+Count=5
+2=drivers\adc.h
 t2=1
-3=adc.c
-t3=1
-4=hardware.c
-t4=1
-5=tempr.c
+3=tempr.h
+t3=5
+4=D:\ghady\Firmware Design Software\PICC\Drivers\stdbool.h
+t4=5
+5=system.h
 t5=1
 6=tc72.c
 t6=1
@@ -74,13 +74,13 @@ t6=1
 Type=4
 
 [ProjectLog]
-Days=14
+Days=15
 D1=08-09-2024
 D1_L=4
 D1_L1=[66257]Project Opened.
 D1_L2=[66782]Started Editing.
 D1_L3=[66858]Stopped Editing.
-TotalEdit=33
+TotalEdit=34
 TotalDebug=0
 D1_E=2
 D1_D=0
@@ -210,6 +210,19 @@ D14_L4=[52560]Started Editing.
 D14_L5=[52723]Stopped Editing.
 D14_E=3
 D14_D=0
+D15=17-12-2024
+D15_L=9
+D15_L1=[72928]Project Opened.
+D15_L2=[72928]Project Closed.
+D15_L3=[72943]Project Opened.
+D15_L4=[73656]Started Editing.
+D15_L5=[73659]Stopped Editing.
+D15_E=1
+D15_D=0
+D15_L6=[73659]Project Closed.
+D15_L7=[73753]Project Opened.
+D15_L8=[73753]Project Closed.
+D15_L9=[73754]Project Opened.
 [..\output\elevator.c]
 Type=4
 [..\..\..\UART_int_Tasks\Firmware\output\elevator.c]
@@ -221,6 +234,6 @@ Count=7
 3=system
 4=timer
 5=scheduler
-6=adc
+6=drivers\adc
 7=tempr
 Link=1

@@ -1,5 +1,5 @@
-#include "timer.h"
 #include "main.h"
+#include "timer.h"
 
 // Globals:
 cntr_size_t local_sys_tick_counter = 0; // tick counter

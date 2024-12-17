@@ -1,7 +1,7 @@
-#include "system.h"
-#include "hardware.h"
 #include "main.h"
 #include "stdlib.h"
+#include "hardware.h"
+#include "system.h"
 
 // Global vars:
 system_info current_system_info;

@@ -1,5 +1,5 @@
-#include "hardware.h"
 #include "main.h"
+#include "hardware.h"
 #include "scheduler.h"
 
 /*local prototypes:*/

@@ -9,9 +9,9 @@
  *
  */
 
+#include "main.h"
 #include "tempr.h"
 #include "adc.h"
-#include "main.h"
 
 float read_temperature(void)
 {
