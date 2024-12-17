@@ -40,7 +40,7 @@
  */
 
 #if (defined(__PCH__) || defined(__PCD__)) /*CCS C compiler?*/
-#include "main.h"
+#include "../main.h"
 #endif
 
 /*includes*/

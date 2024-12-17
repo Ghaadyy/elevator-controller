@@ -1,7 +1,7 @@
 #ifndef TIMER_H
 #define TIMER_H
 
-#include "scheduler.h"
+#include "sched/scheduler.h"
 
 // Timer related:
 #define TMR1Reload 2000 // running @ 16MIPS

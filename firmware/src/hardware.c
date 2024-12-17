@@ -1,6 +1,6 @@
 #include "main.h"
 #include "hardware.h"
-#include "scheduler.h"
+#include "sched/scheduler.h"
 
 /*local prototypes:*/
 void heart_beat_led(s_task_handle_t me, s_task_msg_t **msg, void *arg);

@@ -1,5 +1,5 @@
-#include "main.h"
-#include "scheduler.h"
+#include "../main.h"
+#include "../sched/scheduler.h"
 #include "adc.h"
 
 void sample_next_adc_ch(s_task_handle_t me, s_task_msg_t **msg, void *arg);

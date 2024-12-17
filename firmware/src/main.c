@@ -1,7 +1,7 @@
 #include "main.h"
-#include "adc.h"
+#include "drivers/adc.h"
 #include "hardware.h"
-#include "scheduler.h"
+#include "sched/scheduler.h"
 #include "system.h"
 #include "timer.h"
 
