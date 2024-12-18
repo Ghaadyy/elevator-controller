@@ -1,0 +1,28 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="main",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="get_ticks_counter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$timer_8c.html#a1a5b52c1e5e4f30bdd56f4d82e29adba",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="init_adc",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$adc_8c.html#a3d7b3a08f92c17af6f1729e423a8e138",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="s_task_create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#aa30bd78cb4f99124163a56d65a6cf27f",tooltip=" "];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="sample_next_adc_ch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$adc_8c.html#ac2d58b025767123cfdabb5d8ffac1d3f",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="init_hw",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$hardware_8c.html#ac0c1407730bec27bc6bae4780714bac3",tooltip=" "];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="init_io_ports",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$hardware_8c.html#af6081e1ab71579b394b3d5cf6dd8e02c",tooltip="Function to setup all IOs."];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="init_system",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$system_8c.html#afd9e8417963fd82807b7069e7ec00dcb",tooltip=" "];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="scheduler",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#a9fa00b0be5d3c4781048861e2506eb63",tooltip=" "];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="scheduler_init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#a9e691eab2c26becb246e80421cfdd571",tooltip=" "];
+  Node10 -> Node4 [id="edge10_Node000010_Node000004",color="steelblue1",style="solid",tooltip=" "];
+}
