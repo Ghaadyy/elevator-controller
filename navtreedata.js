@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Elevator Controller", "index.html", [
+    [ "Elevator Controller Firmware", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
