@@ -1,0 +1,58 @@
+# Doxyfile 1.12.0
+
+# Project-related settings
+PROJECT_NAME           = "Elevator Controller"
+PROJECT_NUMBER         = "0.0.1"
+PROJECT_BRIEF          = "An elevator controller firmware"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English
+
+# Input-related settings
+INPUT                  = firmware/src include
+FILE_PATTERNS          = *.h *.c
+RECURSIVE              = YES
+EXCLUDE                = tests examples
+
+# Build settings
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# HTML output settings
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_EXTRA_STYLESHEET  = doxygen-theme/doxygen-awesome-css-2.3.4/doxygen-awesome.css
+HTML_EXTRA_FILES       = doxygen-theme/doxygen-awesome-css-2.3.4/doxygen-awesome-darkmode-toggle.js
+INLINE_SOURCES         = NO 
+GENERATE_HTMLHELP      = NO
+INDEX_PAGE             = index.html
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX 		   = NO
+FULL_SIDEBAR		   = NO
+
+# LaTeX output settings
+GENERATE_LATEX         = NO
+
+# Dot (GraphViz) settings
+HAVE_DOT               = YES
+DOT_PATH               =
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_TRANSPARENT        = NO
+DOT_IMAGE_FORMAT       = png
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+
+# Miscellaneous settings
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+QUIET                  = NO
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES

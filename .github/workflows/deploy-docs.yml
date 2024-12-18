@@ -1,0 +1,35 @@
+name: Build and Deploy Doxygen Documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Doxygen Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Doxygen
+        run: sudo apt-get install -y doxygen
+
+      - name: Fetch Doxygen Awesome Theme
+        run: |
+          mkdir -p doxygen-theme
+          curl -L https://codeload.github.com/jothepro/doxygen-awesome-css/zip/refs/tags/v2.3.4 -o doxygen-awesome-css.zip
+          unzip doxygen-awesome-css.zip -d doxygen-theme
+          rm doxygen-awesome-css.zip
+
+      - name: Generate Doxygen Documentation
+        run: doxygen Doxyfile
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/html
