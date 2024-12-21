@@ -113,13 +113,15 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aed59bb30213aec95f169ab0215d017a3" id="r_aed59bb30213aec95f169ab0215d017a3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempr_8h.html#aed59bb30213aec95f169ab0215d017a3">read_temperature</a> (void)</td></tr>
+<tr class="memdesc:aed59bb30213aec95f169ab0215d017a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the temperature.  <br /></td></tr>
 <tr class="separator:aed59bb30213aec95f169ab0215d017a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bae2d28c2da41a357799d6387d0eaa" id="r_ae4bae2d28c2da41a357799d6387d0eaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempr_8h.html#ae4bae2d28c2da41a357799d6387d0eaa">read_temperature_BCD_limited</a> (void)</td></tr>
+<tr class="memdesc:ae4bae2d28c2da41a357799d6387d0eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the temperature in BCD format limited to 2 digits.  <br /></td></tr>
+<tr class="separator:ae4bae2d28c2da41a357799d6387d0eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Majdi Richa (<a href="#" onclick="location.href='mai'+'lto:'+'maj'+'di'+'.ri'+'ch'+'a@g'+'ma'+'il.'+'co'+'m'; return false;">majdi<span class="obfuscator">.nosp@m.</span>.ric<span class="obfuscator">.nosp@m.</span>ha@gm<span class="obfuscator">.nosp@m.</span>ail.<span class="obfuscator">.nosp@m.</span>com</a>) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-11-18</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Antoine Karam (<a href="#" onclick="location.href='mai'+'lto:'+'ant'+'oi'+'nek'+'ar'+'am1'+'41'+'4@g'+'ma'+'il.'+'co'+'m'; return false;">antoi<span class="obfuscator">.nosp@m.</span>neka<span class="obfuscator">.nosp@m.</span>ram14<span class="obfuscator">.nosp@m.</span>14@g<span class="obfuscator">.nosp@m.</span>mail.<span class="obfuscator">.nosp@m.</span>com</a>) </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024-12-21 </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af900a8b6b1e1763dd0e90e48fc2fb317" name="af900a8b6b1e1763dd0e90e48fc2fb317"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af900a8b6b1e1763dd0e90e48fc2fb317">&#9670;&#160;</a></span>MAX_TEMPERATURE</h2>
@@ -151,6 +153,45 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the temperature. </p>
+<dl class="section return"><dt>Returns</dt><dd>float </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tempr_8h_aed59bb30213aec95f169ab0215d017a3_cgraph.png" border="0" usemap="#atempr_8h_aed59bb30213aec95f169ab0215d017a3_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tempr_8h_aed59bb30213aec95f169ab0215d017a3_icgraph.png" border="0" usemap="#atempr_8h_aed59bb30213aec95f169ab0215d017a3_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae4bae2d28c2da41a357799d6387d0eaa" name="ae4bae2d28c2da41a357799d6387d0eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4bae2d28c2da41a357799d6387d0eaa">&#9670;&#160;</a></span>read_temperature_BCD_limited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> read_temperature_BCD_limited </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the temperature in BCD format limited to 2 digits. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tempr_8h_ae4bae2d28c2da41a357799d6387d0eaa_cgraph.png" border="0" usemap="#atempr_8h_ae4bae2d28c2da41a357799d6387d0eaa_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
