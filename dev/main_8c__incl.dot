@@ -36,4 +36,6 @@ digraph "firmware/src/main.c"
   Node14 -> Node11 [id="edge16_Node000014_Node000011",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node15 [id="edge17_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
   Node15 [id="Node000015",label="drivers/ds1307.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8h.html",tooltip=" "];
+  Node1 -> Node16 [id="edge18_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="api/display_time_date\l_temp.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8h.html",tooltip=" "];
 }
