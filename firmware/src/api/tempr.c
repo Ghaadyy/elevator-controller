@@ -28,8 +28,8 @@ uint8_t read_temperature_BCD_limited(void)
 
     uint8_t temp = (uint8_t)raw_temp; /* Convert float to uint8_t for easier extraction*/
 
-    uint8_t first_digit = temp / 10;           /* Extract the first digit */
-    uint8_t second_digit = (uint8_t)temp % 10; /* Extract the second digit */
+    uint8_t first_digit = temp / 10;  /* Extract the first digit */
+    uint8_t second_digit = temp % 10; /* Extract the second digit */
 
     uint8_t packed_digits = (second_digit & 0x0F) | ((first_digit << 4) & 0xF0); /* Pack the two digits into one byte */
 
