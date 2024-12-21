@@ -16,4 +16,11 @@
  */
 float read_temperature(void);
 
+/**
+ * @brief Get the temperature in BCD format limited to 2 digits
+ *
+ * @return uint8_t
+ */
+uint8_t read_temperature_BCD_limited(void);
+
 #endif
