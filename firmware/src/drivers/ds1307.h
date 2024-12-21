@@ -41,7 +41,7 @@ typedef struct time_info
  * @return true
  * @return false
  */
-bool init_rtc_clock(void);
+bool init_rtc(void);
 
 /**
  * @brief Get the date in BCD format

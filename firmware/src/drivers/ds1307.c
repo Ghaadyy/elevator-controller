@@ -11,7 +11,7 @@
 #define _AND_ACK (1)  /*!< Slave ACK */
 #define _AND_NACK (0) /*!< Slave NACK */
 
-bool init_rtc_clock(void)
+bool init_rtc(void)
 {
     uint8_t ack_state = 0;
 

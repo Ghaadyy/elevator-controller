@@ -21,8 +21,8 @@ void main()
         ret &= init_hw();     /* initialize HW and create LED heartbeat task */
         ret &= init_system(); /* initialize system and enable interrupt(s) (events) */
 
-        ret &= init_adc();       /* initialize ADC sampling */
-        ret &= init_rtc_clock(); /* initilize RTC */
+        ret &= init_adc(); /* initialize ADC sampling */
+        ret &= init_rtc(); /* initilize RTC */
 
         if (true == ret) /*success?*/
         {
