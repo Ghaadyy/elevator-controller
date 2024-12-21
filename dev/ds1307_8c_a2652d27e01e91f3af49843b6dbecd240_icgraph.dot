@@ -1,0 +1,11 @@
+digraph "get_month"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="get_month",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Get the month in BCD format."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="get_full_date",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8c.html#a9cbcbb331fb92c6c7ed9b202b2290bff",tooltip="Get the date in BCD format."];
+}
