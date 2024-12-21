@@ -4,6 +4,7 @@
 #include "sched/scheduler.h"
 #include "system.h"
 #include "timer.h"
+#include "drivers/ds1307.h"
 
 void main()
 {
@@ -17,13 +18,11 @@ void main()
     if (true == ret)
     {
         /*Initialize system:*/
-        ret &= init_hw();     /*initialize HW and create LED heartbeat task*/
-        ret &= init_system(); /*initialize system and enable interrupt(s)
-                                 (events)*/
+        ret &= init_hw();     /* initialize HW and create LED heartbeat task */
+        ret &= init_system(); /* initialize system and enable interrupt(s) (events) */
 
-        ret &= init_adc(); /*initialize ADC sampling*/
-
-        /*. . . . . . .*/
+        ret &= init_adc(); /* initialize ADC sampling */
+        ret &= init_rtc(); /* initilize RTC */
 
         if (true == ret) /*success?*/
         {
