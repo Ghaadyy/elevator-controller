@@ -13,13 +13,19 @@
 
 bool init_rtc_clock(void)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
+    /* Begin an I2C transaction to copy the seconds register */
     i2c_start();                                  /* Issue START condition */
-    ack_state |= i2c_write(_DS1307_SLAVE_ADDR_R); /* Specify DS1307 slave with READ */
+    ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
     ack_state |= i2c_write(SECS_ADDR);            /* Write the seconds register */
-    uint8_t seconds = i2c_read(_AND_NACK);        /* Read existing value in register */
     i2c_start();                                  /* Issue RESTART condition */
+    ack_state |= i2c_write(_DS1307_SLAVE_ADDR_R); /* Specify DS1307 slave with READ */
+    uint8_t seconds = i2c_read(_AND_NACK);        /* Read existing value in register */
+    i2c_stop();
+
+    /* Begin another I2C transaction to write the updated seconds register */
+    i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
     ack_state |= i2c_write(SECS_ADDR);            /* Write the seconds register */
     ack_state |= i2c_write(seconds & 0x7F);       /* Unset the Halt bit  */
@@ -30,7 +36,7 @@ bool init_rtc_clock(void)
 
 bool get_full_date(date_info_t *bcd_date)
 {
-    bool ack_state = 0;
+    bool ack_state = true;
     uint8_t date, month;
     ack_state &= get_date(&date);
     ack_state &= get_month(&month);
@@ -41,7 +47,7 @@ bool get_full_date(date_info_t *bcd_date)
 
 bool get_time(time_info_t *bcd_time)
 {
-    bool ack_state = 0;
+    bool ack_state = true;
     uint8_t hrs, mins, seconds;
     ack_state &= get_hour(&hrs);
     ack_state &= get_minutes(&mins);
@@ -54,7 +60,7 @@ bool get_time(time_info_t *bcd_time)
 
 bool get_hour(uint8_t *hour)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
@@ -69,7 +75,7 @@ bool get_hour(uint8_t *hour)
 
 bool get_minutes(uint8_t *minutes)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
@@ -84,7 +90,7 @@ bool get_minutes(uint8_t *minutes)
 
 bool get_seconds(uint8_t *seconds)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
@@ -99,7 +105,7 @@ bool get_seconds(uint8_t *seconds)
 
 bool get_day(uint8_t *day)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave */
@@ -113,7 +119,7 @@ bool get_day(uint8_t *day)
 
 bool get_date(uint8_t *date)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
@@ -128,7 +134,7 @@ bool get_date(uint8_t *date)
 
 bool get_month(uint8_t *month)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
@@ -143,7 +149,7 @@ bool get_month(uint8_t *month)
 
 bool get_year(uint8_t *year)
 {
-    bool ack_state = 0;
+    uint8_t ack_state = 0;
 
     i2c_start();                                  /* Issue START condition */
     ack_state |= i2c_write(_DS1307_SLAVE_ADDR_W); /* Specify DS1307 slave with WRITE */
