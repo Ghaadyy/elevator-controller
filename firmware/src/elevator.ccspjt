@@ -40,7 +40,7 @@ enabled=0
 chip=1
 D1=
 V1=
-buildcount=49
+buildcount=88
 
 [main.c]
 Type=4
@@ -59,7 +59,7 @@ Fixed=
 [Opened Files]
 1=main.c
 t1=1
-Count=6
+Count=8
 2=drivers\adc.h
 t2=1
 3=D:\ghady\Firmware Design Software\PICC\Drivers\stdbool.h
@@ -70,13 +70,15 @@ t4=1
 t5=1
 6=hardware.c
 t6=1
-7=hardware.c
+7=drivers\ds1307.h
 t7=1
+8=drivers\ds1307.c
+t8=1
 [..\output\misc_IOs.c]
 Type=4
 
 [ProjectLog]
-Days=15
+Days=16
 D1=08-09-2024
 D1_L=4
 D1_L1=[66257]Project Opened.
@@ -227,12 +229,19 @@ D15_L8=[73753]Project Closed.
 D15_L9=[73754]Project Opened.
 D15_L16=[76820]Started Editing.
 D15_L17=[76845]Stopped Editing.
+D16=21-12-2024
+D16_L=5
+D16_L1=[50317]Project Opened.
+D16_L2=[50317]Project Closed.
+D16_L3=[50318]Project Opened.
+D16_L4=[56483]Started Editing.
+D16_L5=[56783]Stopped Editing.
 [..\output\elevator.c]
 Type=4
 [..\..\..\UART_int_Tasks\Firmware\output\elevator.c]
 Type=4
 [Units]
-Count=7
+Count=8
 1=main
 2=hardware
 3=system
@@ -240,4 +249,5 @@ Count=7
 5=drivers\adc
 6=api\tempr
 7=sched\scheduler
+8=drivers\ds1307
 Link=1
