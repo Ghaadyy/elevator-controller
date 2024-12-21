@@ -5,6 +5,7 @@
 #include "system.h"
 #include "timer.h"
 #include "drivers/ds1307.h"
+#include "api/display_time_date_temp.h"
 
 void main()
 {
@@ -23,6 +24,8 @@ void main()
 
         ret &= init_adc(); /* initialize ADC sampling */
         ret &= init_rtc(); /* initilize RTC */
+
+        ret &= init_display_time_date_temp(); /* initialize task to cycle and display time, date, and temperature */
 
         if (true == ret) /*success?*/
         {
