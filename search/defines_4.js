@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['priorities_5fcycle_5flen_0',['PRIORITIES_CYCLE_LEN',['../scheduler_8c.html#ad5068c6b6f7da1f315c20ef3e064f159',1,'scheduler.c']]]
+  ['hrs_5faddr_0',['HRS_ADDR',['../ds1307_8h.html#a46dce60947bbf35b796842f7e34a5820',1,'ds1307.h']]]
 ];

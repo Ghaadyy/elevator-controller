@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['previous_0',['previous',['../structs__task__node.html#a47018b493508429bd2899a78a8b6e418',1,'s_task_node::previous'],['../structs__task__msg.html#a6fd088857d5fd04398cadadf30c368af',1,'s_task_msg::previous']]],
-  ['priority_5fcycle_1',['priority_cycle',['../scheduler_8c.html#a2fe489cecd02b5ba257816f3ffb666f2',1,'scheduler.c']]]
+  ['n_5fticks_0',['n_ticks',['../structs__task__node.html#ad2d85a41c083167e384b31be36aceb3e',1,'s_task_node']]],
+  ['next_1',['next',['../structs__task__node.html#adae2afccd6ec89aee155bf70dba74a6e',1,'s_task_node::next'],['../structs__task__msg.html#a4924a29e04645dcb33720eb3f7c29b30',1,'s_task_msg::next']]]
 ];

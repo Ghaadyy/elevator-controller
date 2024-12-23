@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mailbox_0',['mailbox',['../structmailbox.html',1,'']]]
+  ['date_5finfo_0',['date_info',['../structdate__info.html',1,'']]]
 ];

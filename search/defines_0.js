@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['adc_5flsb_0',['ADC_LSB',['../adc_8h.html#a5ee2c32c8ee138c18dea51d613b78fcd',1,'adc.h']]],
-  ['adc_5fmax_5flvl_1',['ADC_MAX_LVL',['../adc_8h.html#a0672d6ff00844d5dfd947c86409acbcb',1,'adc.h']]],
-  ['adc_5fvref_2',['ADC_VREF',['../adc_8h.html#a5a03d0b939a8dda552c9fe3319a82485',1,'adc.h']]],
-  ['adc_5fwindow_5fbit_5fshift_3',['ADC_WINDOW_BIT_SHIFT',['../adc_8h.html#a6a54527e18e7460f67eb26d23f3ec034',1,'adc.h']]],
-  ['adc_5fwindow_5fsize_4',['ADC_WINDOW_SIZE',['../adc_8h.html#a3b51d4050081716ea35399d5f010c2f1',1,'adc.h']]],
-  ['adc_5fwindow_5fsize_5fmask_5',['ADC_WINDOW_SIZE_MASK',['../adc_8h.html#a721a7918b0b3f1f59dc4c5e2829e8729',1,'adc.h']]]
+  ['_5fand_5fack_0',['_AND_ACK',['../ds1307_8c.html#a32f59f67b6d8fe4a261b378e32b09713',1,'ds1307.c']]],
+  ['_5fand_5fnack_1',['_AND_NACK',['../ds1307_8c.html#ad45cdc5bc68af986a605c3d452f5d963',1,'ds1307.c']]],
+  ['_5fds1307_5fslave_5faddr_5fr_2',['_DS1307_SLAVE_ADDR_R',['../ds1307_8h.html#af02add10c77b830404d16ea6c82e14cd',1,'ds1307.h']]],
+  ['_5fds1307_5fslave_5faddr_5fw_3',['_DS1307_SLAVE_ADDR_W',['../ds1307_8h.html#a73ce125681deb379ca5f126528594258',1,'ds1307.h']]]
 ];

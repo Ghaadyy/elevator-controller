@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['window_0',['window',['../struct__adc__info.html#a9e8b248946db4a4fc8ec7091ca9b9b8d',1,'_adc_info']]],
-  ['window_5findex_1',['window_index',['../struct__adc__info.html#a0bffeef2bad198f06156670758ee4517',1,'_adc_info']]]
+  ['s_5factive_0',['s_active',['../structs__task__info.html#ac08098df3d732ebb8bea59690f284234',1,'s_task_info']]],
+  ['s_5fmode_1',['s_mode',['../structs__task__node.html#ad22ba7133651b60b4e99dd54be9a41da',1,'s_task_node']]],
+  ['s_5fpriority_2',['s_priority',['../structs__task__node.html#ab6bfbc410258b49e9376aa209a14b113',1,'s_task_node::s_priority'],['../structs__task__info.html#af62e3254e9e322cb017721f81d4850cd',1,'s_task_info::s_priority']]],
+  ['s_5ftask_3',['s_task',['../structs__task__node.html#a860b499201e6135302caf370ea8798d6',1,'s_task_node']]],
+  ['s_5ftask_5fdst_5fhndl_4',['s_task_dst_hndl',['../structs__task__msg.html#a0f2aeee4b1576d6efa0d4fc228917e3f',1,'s_task_msg']]],
+  ['s_5ftask_5fhead_5',['s_task_head',['../structscheduler__info.html#acf116f55b46f1f80971bbcf53ad6e875',1,'scheduler_info']]],
+  ['s_5ftask_5fid_6',['s_task_id',['../structs__task__node.html#a9318f1e306c79911f69374594ced89c1',1,'s_task_node']]],
+  ['s_5ftask_5fmsg_7',['s_task_msg',['../structs__task__node.html#afa2080aaa6208fe898695ca65e5320c1',1,'s_task_node']]],
+  ['s_5ftask_5fsrc_5fhndl_8',['s_task_src_hndl',['../structs__task__msg.html#a5d88452746ed0499cf9ac99d9b0cf025',1,'s_task_msg']]],
+  ['s_5ftask_5ftail_9',['s_task_tail',['../structscheduler__info.html#a46037ad1665ed3d7dcb57a41471b704d',1,'scheduler_info']]],
+  ['s_5ftasks_5fcount_10',['s_tasks_count',['../structscheduler__info.html#a26fdcce33d70c08b16a6dfe1b4df47a2',1,'scheduler_info::s_tasks_count'],['../structscheduler__stats.html#adeb797487dd24f3e1006ff9649e63e37',1,'scheduler_stats::s_tasks_count'],['../structs__semaphore.html#a51806d06e6668973ff899feec5edaa8c',1,'s_semaphore::s_tasks_count']]],
+  ['s_5ftasks_5fcpu_5fusage_11',['s_tasks_cpu_usage',['../structscheduler__stats.html#a50419fc149025dfff308c87370449cc3',1,'scheduler_stats']]],
+  ['s_5ftasks_5fmsg_5fcount_12',['s_tasks_msg_count',['../structscheduler__stats.html#a19043312cb21d7082999c378a119a63f',1,'scheduler_stats']]],
+  ['s_5fticks_13',['s_ticks',['../structs__task__node.html#ad99faa8b4e2fd6453735130f298201f9',1,'s_task_node::s_ticks'],['../structs__task__info.html#acdaa8178a273f01a486ea445ecdd6b54',1,'s_task_info::s_ticks']]],
+  ['sched_5finfo_14',['sched_info',['../scheduler_8c.html#ad55ead47dc3ba0642fffb8f486e36d29',1,'scheduler.c']]],
+  ['seconds_15',['seconds',['../structtime__info.html#a23c9416dc345326d22a831992cbfc5bc',1,'time_info']]],
+  ['sem_16',['sem',['../structs__semaphore.html#a7024a0903720a4cc3c15a772e77f6c4e',1,'s_semaphore']]]
 ];

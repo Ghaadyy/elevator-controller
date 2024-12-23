@@ -100,15 +100,19 @@ $(document).ready(function(){initNavTree('tempr_8h_source.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <a href="tempr_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef TEMPR_H</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define TEMPR_H</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="tempr_8h.html#af900a8b6b1e1763dd0e90e48fc2fb317">   15</a></span><span class="preprocessor">#define MAX_TEMPERATURE (100.0) </span><span class="comment">// deg C</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef TEMPR_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define TEMPR_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="tempr_8h.html#af900a8b6b1e1763dd0e90e48fc2fb317">   10</a></span><span class="preprocessor">#define MAX_TEMPERATURE (100.0) </span><span class="comment">// deg C</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">float</span> <a class="code hl_function" href="tempr_8h.html#aed59bb30213aec95f169ab0215d017a3">read_temperature</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="atempr_8h_html_aed59bb30213aec95f169ab0215d017a3"><div class="ttname"><a href="tempr_8h.html#aed59bb30213aec95f169ab0215d017a3">read_temperature</a></div><div class="ttdeci">float read_temperature(void)</div><div class="ttdef"><b>Definition</b> tempr.c:16</div></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><a class="code hl_typedef" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code hl_function" href="tempr_8h.html#ae4bae2d28c2da41a357799d6387d0eaa">read_temperature_BCD_limited</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="atarget__port_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition</b> target_port.h:87</div></div>
+<div class="ttc" id="atempr_8h_html_ae4bae2d28c2da41a357799d6387d0eaa"><div class="ttname"><a href="tempr_8h.html#ae4bae2d28c2da41a357799d6387d0eaa">read_temperature_BCD_limited</a></div><div class="ttdeci">uint8_t read_temperature_BCD_limited(void)</div><div class="ttdoc">Get the temperature in BCD format limited to 2 digits.</div><div class="ttdef"><b>Definition</b> tempr.c:20</div></div>
+<div class="ttc" id="atempr_8h_html_aed59bb30213aec95f169ab0215d017a3"><div class="ttname"><a href="tempr_8h.html#aed59bb30213aec95f169ab0215d017a3">read_temperature</a></div><div class="ttdeci">float read_temperature(void)</div><div class="ttdoc">Get the temperature.</div><div class="ttdef"><b>Definition</b> tempr.c:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

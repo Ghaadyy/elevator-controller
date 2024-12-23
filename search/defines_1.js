@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['fw_5frev_5fbld_0',['FW_REV_BLD',['../version_8h.html#a2fb76faadff6c1eacdd2c6b4e82a2aa0',1,'version.h']]],
-  ['fw_5frev_5fday_1',['FW_REV_DAY',['../version_8h.html#a641175e0b52381aa331e9e685f901421',1,'version.h']]],
-  ['fw_5frev_5fmaj_2',['FW_REV_MAJ',['../version_8h.html#acf8add05bf806381267d3fe94a410d3a',1,'version.h']]],
-  ['fw_5frev_5fmin_3',['FW_REV_MIN',['../version_8h.html#a9c64ac56968ab09081936cc9ce2ae31a',1,'version.h']]],
-  ['fw_5frev_5fmnt_4',['FW_REV_MNT',['../version_8h.html#aaa22a8027de705ffa951465b798e27c1',1,'version.h']]],
-  ['fw_5frev_5fyer_5',['FW_REV_YER',['../version_8h.html#a20cf65c2fbf61419033b6a93330b8cd2',1,'version.h']]]
+  ['adc_5flsb_0',['ADC_LSB',['../adc_8h.html#a5ee2c32c8ee138c18dea51d613b78fcd',1,'adc.h']]],
+  ['adc_5fmax_5flvl_1',['ADC_MAX_LVL',['../adc_8h.html#a0672d6ff00844d5dfd947c86409acbcb',1,'adc.h']]],
+  ['adc_5fvref_2',['ADC_VREF',['../adc_8h.html#a5a03d0b939a8dda552c9fe3319a82485',1,'adc.h']]],
+  ['adc_5fwindow_5fbit_5fshift_3',['ADC_WINDOW_BIT_SHIFT',['../adc_8h.html#a6a54527e18e7460f67eb26d23f3ec034',1,'adc.h']]],
+  ['adc_5fwindow_5fsize_4',['ADC_WINDOW_SIZE',['../adc_8h.html#a3b51d4050081716ea35399d5f010c2f1',1,'adc.h']]],
+  ['adc_5fwindow_5fsize_5fmask_5',['ADC_WINDOW_SIZE_MASK',['../adc_8h.html#a721a7918b0b3f1f59dc4c5e2829e8729',1,'adc.h']]]
 ];
