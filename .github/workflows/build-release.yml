@@ -1,0 +1,43 @@
+name: Build release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download Compiler
+        env:
+          COMPILER_URL: ${{ secrets.COMPILER_URL }}
+        run: |
+          Invoke-WebRequest -Uri $env:COMPILER_URL -OutFile "C:\ccs_c_compiler.rar"
+
+      - name: Extract Compiler
+        run: |
+          choco install 7zip
+          & "C:\Program Files\7-Zip\7z.exe" x C:\ccs_c_compiler.rar -oC:\ccs_c_compiler
+
+      - name: Set up Compiler
+        run: |
+          $env:PATH = "C:\ccs_c_compiler\PICC;" + $env:PATH
+
+      - name: Build Project
+        shell: bash
+        run: |
+          cd firmware/src
+          "C:\ccs_c_compiler\PICC\ccsc.exe" +FH I="C:\ccs_c_compiler\PICC\Drivers;C:\ccs_c_compiler\PICC\Devices" build=elevator.ccspjt || exit 0
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: firmware/output/elevator.hex
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
