@@ -6,6 +6,7 @@
 #include "timer.h"
 #include "drivers/ds1307.h"
 #include "api/display_time_date_temp.h"
+#include "api/floor.h"
 
 void main()
 {
@@ -26,6 +27,7 @@ void main()
         ret &= init_rtc(); /* initilize RTC */
 
         ret &= init_display_time_date_temp(); /* initialize task to cycle and display time, date, and temperature */
+        ret &= init_floor_monitor();          /* initialize task to monitor floor state */
 
         if (true == ret) /*success?*/
         {
