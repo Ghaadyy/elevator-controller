@@ -11,6 +11,6 @@ digraph "firmware/src/api"
   dir_e200633b3c29dcc6afc0356839fb5e29 [label="drivers", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_e200633b3c29dcc6afc0356839fb5e29.html",tooltip=""];
   dir_18ac01a18bb8b208f27c88345941c779 [label="api", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_18ac01a18bb8b208f27c88345941c779.html",tooltip=""];
   }
-  dir_18ac01a18bb8b208f27c88345941c779->dir_7823007820cfe4d1a4ad04f11c50e251 [headlabel="2", labeldistance=1.5 headhref="dir_000000_000003.html" href="dir_000000_000003.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_18ac01a18bb8b208f27c88345941c779->dir_7823007820cfe4d1a4ad04f11c50e251 [headlabel="3", labeldistance=1.5 headhref="dir_000000_000003.html" href="dir_000000_000003.html" color="steelblue1" fontcolor="steelblue1"];
   dir_18ac01a18bb8b208f27c88345941c779->dir_e200633b3c29dcc6afc0356839fb5e29 [headlabel="2", labeldistance=1.5 headhref="dir_000000_000001.html" href="dir_000000_000001.html" color="steelblue1" fontcolor="steelblue1"];
 }

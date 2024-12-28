@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc_8c.html",
-"target__port_8h.html#a73705d44e0ddde601ded7d759dd0eaed"
+"structs__task__node.html#adae2afccd6ec89aee155bf70dba74a6e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

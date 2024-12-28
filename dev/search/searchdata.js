@@ -3,11 +3,11 @@ var indexSectionsWithContent =
   0: "_acdefghilmnprstuvwy",
   1: "_dmst",
   2: "adfhmrstv",
-  3: "dfghimrst",
-  4: "acdeghilmnpswy",
+  3: "cdfghimrst",
+  4: "acdeghilmnpsuwy",
   5: "acdmstu",
-  6: "afs",
-  7: "afgs",
+  6: "adfs",
+  7: "adfgnsu",
   8: "_adfhmnpsty",
   9: "cef"
 };

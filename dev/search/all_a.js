@@ -16,6 +16,10 @@ var searchData=
   ['min_5fcount_13',['MIN_COUNT',['../display__time__date__temp_8h.html#a6cd4cd4b01b998aa8158097132cfb710',1,'display_time_date_temp.h']]],
   ['mins_5faddr_14',['MINS_ADDR',['../ds1307_8h.html#a28c667b5676f847028436ecd4e6b96bf',1,'ds1307.h']]],
   ['minutes_15',['minutes',['../structtime__info.html#aec16e61510d699879b65409d42f41199',1,'time_info']]],
-  ['month_16',['month',['../structdate__info.html#ae4f90dc415ae6ba5a024b26037ce51c3',1,'date_info']]],
-  ['month_5faddr_17',['MONTH_ADDR',['../ds1307_8h.html#ae615679819fcbd214d60f9104bdb8bf9',1,'ds1307.h']]]
+  ['monitor_5fmotor_16',['monitor_motor',['../motor_8c.html#abe79058298b250a2532f374868df320c',1,'motor.c']]],
+  ['monitor_5fmotor_5fhndl_17',['monitor_motor_hndl',['../motor_8c.html#a782c361f6dc4cac5073b26037707dfde',1,'motor.c']]],
+  ['month_18',['month',['../structdate__info.html#ae4f90dc415ae6ba5a024b26037ce51c3',1,'date_info']]],
+  ['month_5faddr_19',['MONTH_ADDR',['../ds1307_8h.html#ae615679819fcbd214d60f9104bdb8bf9',1,'ds1307.h']]],
+  ['motor_2ec_20',['motor.c',['../motor_8c.html',1,'']]],
+  ['motor_2eh_21',['motor.h',['../motor_8h.html',1,'']]]
 ];

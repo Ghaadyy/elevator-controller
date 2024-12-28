@@ -8,12 +8,15 @@ var searchData=
   ['date_5finfo_5ft_5',['date_info_t',['../ds1307_8h.html#ac1c9e81dca591e9bce615c172b4cb4f5',1,'ds1307.h']]],
   ['day_6',['day',['../structdate__info.html#ae4708d745777f674291acd9ef2fcc512',1,'date_info']]],
   ['day_5faddr_7',['DAY_ADDR',['../ds1307_8h.html#a059a7ffd66c8cef5421397925e6d8230',1,'ds1307.h']]],
-  ['display_5ffloor_8',['display_floor',['../floor_8c.html#ad91d36598ad3d769bd79f51d77874a95',1,'floor.c']]],
-  ['display_5fprocess_9',['display_process',['../display__time__date__temp_8c.html#a623676cea54e765bc09b0150f9f11ee3',1,'display_time_date_temp.c']]],
-  ['display_5ftime_5fdate_5ftemp_2ec_10',['display_time_date_temp.c',['../display__time__date__temp_8c.html',1,'']]],
-  ['display_5ftime_5fdate_5ftemp_2eh_11',['display_time_date_temp.h',['../display__time__date__temp_8h.html',1,'']]],
-  ['display_5fvalue_12',['display_value',['../display__time__date__temp_8c.html#a1c3320d2f19fbf616c4be1c441dceb0b',1,'display_time_date_temp.c']]],
-  ['ds1307_2ec_13',['ds1307.c',['../ds1307_8c.html',1,'']]],
-  ['ds1307_2eh_14',['ds1307.h',['../ds1307_8h.html',1,'']]],
-  ['dummy_15',['dummy',['../struct__systeminfo.html#ad73f01954f437647a381fc3bbd70e2cd',1,'_systeminfo']]]
+  ['direction_8',['direction',['../motor_8h.html#a99f26e6ee9fcd62f75203b5402df8098',1,'motor.h']]],
+  ['display_5ffloor_9',['display_floor',['../floor_8c.html#ad91d36598ad3d769bd79f51d77874a95',1,'floor.c']]],
+  ['display_5fprocess_10',['display_process',['../display__time__date__temp_8c.html#a623676cea54e765bc09b0150f9f11ee3',1,'display_time_date_temp.c']]],
+  ['display_5ftime_5fdate_5ftemp_2ec_11',['display_time_date_temp.c',['../display__time__date__temp_8c.html',1,'']]],
+  ['display_5ftime_5fdate_5ftemp_2eh_12',['display_time_date_temp.h',['../display__time__date__temp_8h.html',1,'']]],
+  ['display_5fvalue_13',['display_value',['../display__time__date__temp_8c.html#a1c3320d2f19fbf616c4be1c441dceb0b',1,'display_time_date_temp.c']]],
+  ['down_14',['DOWN',['../motor_8h.html#a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da',1,'motor.h']]],
+  ['down_5fpins_15',['down_pins',['../motor_8c.html#a50a7e746b359ce8b0426fd672c38d7ce',1,'motor.c']]],
+  ['ds1307_2ec_16',['ds1307.c',['../ds1307_8c.html',1,'']]],
+  ['ds1307_2eh_17',['ds1307.h',['../ds1307_8h.html',1,'']]],
+  ['dummy_18',['dummy',['../struct__systeminfo.html#ad73f01954f437647a381fc3bbd70e2cd',1,'_systeminfo']]]
 ];

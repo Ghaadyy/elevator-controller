@@ -40,4 +40,6 @@ digraph "firmware/src/main.c"
   Node16 [id="Node000016",label="api/display_time_date\l_temp.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8h.html",tooltip=" "];
   Node1 -> Node17 [id="edge19_Node000001_Node000017",color="steelblue1",style="solid",tooltip=" "];
   Node17 [id="Node000017",label="api/floor.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8h.html",tooltip="The API to access the elevator's floor state."];
+  Node1 -> Node18 [id="edge20_Node000001_Node000018",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="api/motor.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$motor_8h.html",tooltip=" "];
 }

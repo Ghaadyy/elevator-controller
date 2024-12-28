@@ -17,6 +17,9 @@ digraph "s_task_create"
   Node5 [id="Node000005",label="init_floor_monitor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#af2aa45cd3f888a21f47b3d4ae6c5bb30",tooltip="Initializes a task that monitors the floor state."];
   Node5 -> Node3 [id="edge6_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node6 [id="edge7_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="scheduler_init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#a9e691eab2c26becb246e80421cfdd571",tooltip=" "];
+  Node6 [id="Node000006",label="init_motor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$motor_8c.html#a10f8eee1390e28e414927e87161afb6d",tooltip="Initializes the motor task but does not activate it initially."];
   Node6 -> Node3 [id="edge8_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge9_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="scheduler_init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#a9e691eab2c26becb246e80421cfdd571",tooltip=" "];
+  Node7 -> Node3 [id="edge10_Node000007_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }
