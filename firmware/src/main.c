@@ -8,6 +8,8 @@
 #include "api/display_time_date_temp.h"
 #include "api/floor.h"
 #include "api/motor.h"
+#include "api/elevator.h"
+#include "api/buttons.h"
 
 void main()
 {
@@ -30,6 +32,9 @@ void main()
         ret &= init_display_time_date_temp(); /* initialize task to cycle and display time, date, and temperature */
         ret &= init_floor_monitor();          /* initialize task to monitor floor state */
         ret &= init_motor();                  /* initialize task to monitor the motor */
+        ret &= init_elevator_scheduler();     /* initialize the elevator scheduler */
+
+        ret &= init_buttons();
 
         if (true == ret) /*success?*/
         {

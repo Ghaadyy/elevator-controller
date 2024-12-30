@@ -11,12 +11,12 @@
  * @brief Enumration for motor direction.
  *
  */
-enum direction
+typedef enum direction
 {
     UP = 1,
     NONE = 0,
     DOWN = -1,
-};
+} direction_t;
 
 /**
  * @brief Enumeration for motor speed.
@@ -43,5 +43,12 @@ bool init_motor(void);
  * @param target_floor
  */
 void goto_floor(uint8_t target_floor);
+
+/**
+ * @brief Get the motor direction
+ *
+ * @return enum direction
+ */
+direction_t get_motor_direction();
 
 #endif
