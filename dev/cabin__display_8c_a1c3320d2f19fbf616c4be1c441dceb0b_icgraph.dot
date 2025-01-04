@@ -7,17 +7,17 @@ digraph "display_value"
   rankdir="RL";
   Node1 [id="Node000001",label="display_value",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Display a 2-digit value across two 7-segment displays."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="show_date",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#ac509fb687538ef74425d0afa4758e349",tooltip="Display the current date in (DD MM) format."];
+  Node2 [id="Node000002",label="show_date",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#ac509fb687538ef74425d0afa4758e349",tooltip="Display the current date in (DD MM) format."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="display_process",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a623676cea54e765bc09b0150f9f11ee3",tooltip="Task that cycles through and displays time, date, and temperature."];
+  Node3 [id="Node000003",label="display_process",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#a623676cea54e765bc09b0150f9f11ee3",tooltip="Task that cycles through and displays time, date, and temperature."];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="init_display_time_date_temp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a08d88c70d567692f6f4900a3842eda5a",tooltip="Initialize and start the task."];
+  Node4 [id="Node000004",label="init_cabin_display",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#aac8ba457dfa063e7eada179b4842ae39",tooltip="Initialize and start the task."];
   Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8c.html#acdef7a1fd863a6d3770c1268cb06add3",tooltip=" "];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="show_temperature",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#aedcec35a740c8a26d4d07a7e0e80ba14",tooltip="Display the current temperature in (TT dC) format."];
+  Node6 [id="Node000006",label="show_temperature",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#aedcec35a740c8a26d4d07a7e0e80ba14",tooltip="Display the current temperature in (TT dC) format."];
   Node6 -> Node3 [id="edge6_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node7 [id="edge7_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="show_time",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a60628b78e24af29bb233c390d51385ce",tooltip="Display the current time in (HH:MM) format."];
+  Node7 [id="Node000007",label="show_time",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#a60628b78e24af29bb233c390d51385ce",tooltip="Display the current time in (HH:MM) format."];
   Node7 -> Node3 [id="edge8_Node000007_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

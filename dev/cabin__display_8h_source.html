@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Elevator Controller: firmware/src/api/display_time_date_temp.h Source File</title>
+<title>Elevator Controller: firmware/src/api/cabin_display.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('display__time__date__temp_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('cabin__display_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -96,30 +96,30 @@ $(document).ready(function(){initNavTree('display__time__date__temp_8h_source.ht
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">display_time_date_temp.h</div></div>
+  <div class="headertitle"><div class="title">cabin_display.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="display__time__date__temp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef DISPLAY_TIME_DATE_TEMP_H</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define DISPLAY_TIME_DATE_TEMP_H</span></div>
+<a href="cabin__display_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef CABIN_DISPLAY_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define CABIN_DISPLAY_H</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* Starting point for the display cycle counter*/</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="display__time__date__temp_8h.html#a6cd4cd4b01b998aa8158097132cfb710">   11</a></span><span class="preprocessor">#define MIN_COUNT (1)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="cabin__display_8h.html#a6cd4cd4b01b998aa8158097132cfb710">   11</a></span><span class="preprocessor">#define MIN_COUNT (1)</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/* Total number of display options */</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="display__time__date__temp_8h.html#ae14eaaed1fe7cdf491da54a714c426b3">   13</a></span><span class="preprocessor">#define MAX_COUNT (3)</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="cabin__display_8h.html#ae14eaaed1fe7cdf491da54a714c426b3">   13</a></span><span class="preprocessor">#define MAX_COUNT (3)</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/* Number of pins used for controlling two 7-segment displays*/</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="display__time__date__temp_8h.html#ab3b88b57fbf8396ce4d9b39815ecdff8">   15</a></span><span class="preprocessor">#define MAX_PINS (8)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="cabin__display_8h.html#ab3b88b57fbf8396ce4d9b39815ecdff8">   15</a></span><span class="preprocessor">#define MAX_PINS (8)</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">bool</span> <a class="code hl_function" href="display__time__date__temp_8h.html#a08d88c70d567692f6f4900a3842eda5a">init_display_time_date_temp</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">bool</span> <a class="code hl_function" href="cabin__display_8h.html#aac8ba457dfa063e7eada179b4842ae39">init_cabin_display</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="adisplay__time__date__temp_8h_html_a08d88c70d567692f6f4900a3842eda5a"><div class="ttname"><a href="display__time__date__temp_8h.html#a08d88c70d567692f6f4900a3842eda5a">init_display_time_date_temp</a></div><div class="ttdeci">bool init_display_time_date_temp(void)</div><div class="ttdoc">Initialize and start the task.</div><div class="ttdef"><b>Definition</b> display_time_date_temp.c:23</div></div>
+<div class="ttc" id="acabin__display_8h_html_aac8ba457dfa063e7eada179b4842ae39"><div class="ttname"><a href="cabin__display_8h.html#aac8ba457dfa063e7eada179b4842ae39">init_cabin_display</a></div><div class="ttdeci">bool init_cabin_display(void)</div><div class="ttdoc">Initialize and start the task.</div><div class="ttdef"><b>Definition</b> cabin_display.c:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_c898ccd6027d5da3247aa855d21ca2cf.html">src</a></li><li class="navelem"><a class="el" href="dir_18ac01a18bb8b208f27c88345941c779.html">api</a></li><li class="navelem"><a class="el" href="display__time__date__temp_8h.html">display_time_date_temp.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_c898ccd6027d5da3247aa855d21ca2cf.html">src</a></li><li class="navelem"><a class="el" href="dir_18ac01a18bb8b208f27c88345941c779.html">api</a></li><li class="navelem"><a class="el" href="cabin__display_8h.html">cabin_display.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

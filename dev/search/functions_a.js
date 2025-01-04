@@ -17,7 +17,7 @@ var searchData=
   ['scheduler_5finit_14',['scheduler_init',['../scheduler_8c.html#a9e691eab2c26becb246e80421cfdd571',1,'scheduler_init(ticks_cllbk_t tks_cllbk):&#160;scheduler.c'],['../scheduler_8h.html#a9e691eab2c26becb246e80421cfdd571',1,'scheduler_init(ticks_cllbk_t tks_cllbk):&#160;scheduler.c']]],
   ['set_5fmotor_5fdirection_15',['set_motor_direction',['../motor_8c.html#a4dd464f02b377f321131a3f4c05358ac',1,'set_motor_direction(enum direction direction):&#160;motor.c'],['../motor_8c.html#a4dd464f02b377f321131a3f4c05358ac',1,'set_motor_direction(enum direction direction):&#160;motor.c']]],
   ['set_5fmotor_5fspeed_16',['set_motor_speed',['../motor_8c.html#ad75a31e61a2159c683a87c446c1d5dcb',1,'set_motor_speed(enum speed speed):&#160;motor.c'],['../motor_8c.html#ad75a31e61a2159c683a87c446c1d5dcb',1,'set_motor_speed(enum speed speed):&#160;motor.c']]],
-  ['show_5fdate_17',['show_date',['../display__time__date__temp_8c.html#ac509fb687538ef74425d0afa4758e349',1,'display_time_date_temp.c']]],
-  ['show_5ftemperature_18',['show_temperature',['../display__time__date__temp_8c.html#aedcec35a740c8a26d4d07a7e0e80ba14',1,'display_time_date_temp.c']]],
-  ['show_5ftime_19',['show_time',['../display__time__date__temp_8c.html#a60628b78e24af29bb233c390d51385ce',1,'display_time_date_temp.c']]]
+  ['show_5fdate_17',['show_date',['../cabin__display_8c.html#ac509fb687538ef74425d0afa4758e349',1,'cabin_display.c']]],
+  ['show_5ftemperature_18',['show_temperature',['../cabin__display_8c.html#aedcec35a740c8a26d4d07a7e0e80ba14',1,'cabin_display.c']]],
+  ['show_5ftime_19',['show_time',['../cabin__display_8c.html#a60628b78e24af29bb233c390d51385ce',1,'cabin_display.c']]]
 ];

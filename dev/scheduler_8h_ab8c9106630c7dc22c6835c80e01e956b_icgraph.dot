@@ -14,7 +14,7 @@ digraph "s_task_create"
   Node4 [id="Node000004",label="init_buttons",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$buttons_8c.html#acd6080922091377a7034cf7f71d5484d",tooltip="Initializes a task that listens for button presses and trigger actions upon pressing."];
   Node4 -> Node3 [id="edge4_Node000004_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="init_display_time_date_temp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a08d88c70d567692f6f4900a3842eda5a",tooltip="Initialize and start the task."];
+  Node5 [id="Node000005",label="init_cabin_display",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#aac8ba457dfa063e7eada179b4842ae39",tooltip="Initialize and start the task."];
   Node5 -> Node3 [id="edge6_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node6 [id="edge7_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="init_elevator_scheduler",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$elevator_8c.html#afc3c9c97ecd69cf34a393f9261efc0af",tooltip="Initializes the elevator scheduler's task."];

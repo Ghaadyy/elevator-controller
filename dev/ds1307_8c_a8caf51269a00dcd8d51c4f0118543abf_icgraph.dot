@@ -9,11 +9,11 @@ digraph "get_date"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="get_full_date",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8c.html#a9cbcbb331fb92c6c7ed9b202b2290bff",tooltip="Get the date in BCD format."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="show_date",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#ac509fb687538ef74425d0afa4758e349",tooltip="Display the current date in (DD MM) format."];
+  Node3 [id="Node000003",label="show_date",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#ac509fb687538ef74425d0afa4758e349",tooltip="Display the current date in (DD MM) format."];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="display_process",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a623676cea54e765bc09b0150f9f11ee3",tooltip="Task that cycles through and displays time, date, and temperature."];
+  Node4 [id="Node000004",label="display_process",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#a623676cea54e765bc09b0150f9f11ee3",tooltip="Task that cycles through and displays time, date, and temperature."];
   Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="init_display_time_date_temp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a08d88c70d567692f6f4900a3842eda5a",tooltip="Initialize and start the task."];
+  Node5 [id="Node000005",label="init_cabin_display",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#aac8ba457dfa063e7eada179b4842ae39",tooltip="Initialize and start the task."];
   Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8c.html#acdef7a1fd863a6d3770c1268cb06add3",tooltip=" "];
 }

@@ -7,7 +7,7 @@ digraph "show_temperature"
   rankdir="LR";
   Node1 [id="Node000001",label="show_temperature",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Display the current temperature in (TT dC) format."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="display_value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$display__time__date__temp_8c.html#a1c3320d2f19fbf616c4be1c441dceb0b",tooltip="Display a 2-digit value across two 7-segment displays."];
+  Node2 [id="Node000002",label="display_value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#a1c3320d2f19fbf616c4be1c441dceb0b",tooltip="Display a 2-digit value across two 7-segment displays."];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="read_temperature_BCD\l_limited",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$tempr_8c.html#ae4bae2d28c2da41a357799d6387d0eaa",tooltip="Get the temperature in BCD format limited to 2 digits."];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
