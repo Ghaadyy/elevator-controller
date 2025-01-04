@@ -12,7 +12,6 @@
 /*Local prototypes:*/
 void monitor_motor(s_task_handle_t me, s_task_msg_t **msg, void *arg);
 void set_motor_direction(enum direction direction);
-enum direction get_motor_direction();
 void set_motor_speed(enum speed speed);
 bool check_has_approached_target_floor();
 bool check_has_left_start_floor();
@@ -28,7 +27,7 @@ uint8_t down_pins[4] = {-1, PIN_C0, PIN_A5, PIN_A2}; /* Downward direction pins 
 
 bool init_motor(void)
 {
-    return s_task_create(false, S_TASK_HIGH_PRIORITY, 350, monitor_motor, &monitor_motor_hndl, NULL);
+    return s_task_create(false, S_TASK_HIGH_PRIORITY, 200, monitor_motor, &monitor_motor_hndl, NULL);
 }
 
 void goto_floor(uint8_t target_floor)
@@ -55,6 +54,15 @@ void goto_floor(uint8_t target_floor)
         set_motor_direction(new_direction);
         s_task_resume(monitor_motor_hndl, true); /* Immediately resume the task */
     }
+}
+
+enum direction get_motor_direction()
+{
+    if (input(PIN_F3))
+        return UP;
+    if (input(PIN_F4))
+        return DOWN;
+    return NONE;
 }
 
 /**
@@ -117,20 +125,6 @@ void set_motor_direction(enum direction direction)
         output_low(PIN_F4);
         break;
     }
-}
-
-/**
- * @brief Get the motor direction
- *
- * @return enum direction
- */
-enum direction get_motor_direction()
-{
-    if (input(PIN_F3))
-        return UP;
-    if (input(PIN_F4))
-        return DOWN;
-    return NONE;
 }
 
 /**

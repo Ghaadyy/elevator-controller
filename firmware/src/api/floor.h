@@ -9,17 +9,20 @@
  *
  */
 
+#ifndef FLOOR_H
+#define FLOOR_H
+
 /**
  * @brief A simple representation of the floor values.
  *
  */
-enum floor
+typedef enum floor
 {
-    F3 = 3,
-    F2 = 2,
-    F1 = 1,
     GF = 0,
-};
+    F1 = 1,
+    F2 = 2,
+    F3 = 3,
+} floor_t;
 
 /**
  * @brief Initializes a task that monitors the floor state.
@@ -34,4 +37,6 @@ bool init_floor_monitor();
  *
  * @return Floor number
  */
-enum floor get_current_floor();
+floor_t get_current_floor();
+
+#endif
