@@ -1,11 +1,11 @@
 /**
- * @file    display_time_date_temp.h
+ * @file    cabin_display.h
  * @author  Antoine Karam (antoinekaram1414@gmail.com)
  * @date    2024-12-21
  */
 
-#ifndef DISPLAY_TIME_DATE_TEMP_H
-#define DISPLAY_TIME_DATE_TEMP_H
+#ifndef CABIN_DISPLAY_H
+#define CABIN_DISPLAY_H
 
 /* Starting point for the display cycle counter*/
 #define MIN_COUNT (1)
@@ -20,6 +20,6 @@
  * @return true if the task is successfully created
  * @return false otherwise
  */
-bool init_display_time_date_temp(void);
+bool init_cabin_display(void);
 
 #endif
