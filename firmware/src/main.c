@@ -5,7 +5,7 @@
 #include "system.h"
 #include "timer.h"
 #include "drivers/ds1307.h"
-#include "api/display_time_date_temp.h"
+#include "api/cabin_display.h"
 #include "api/floor.h"
 #include "api/motor.h"
 #include "api/elevator.h"
@@ -29,10 +29,10 @@ void main()
         ret &= init_adc(); /* initialize ADC sampling */
         ret &= init_rtc(); /* initilize RTC */
 
-        ret &= init_display_time_date_temp(); /* initialize task to cycle and display time, date, and temperature */
-        ret &= init_floor_monitor();          /* initialize task to monitor floor state */
-        ret &= init_motor();                  /* initialize task to monitor the motor */
-        ret &= init_elevator_scheduler();     /* initialize the elevator scheduler */
+        ret &= init_cabin_display();      /* initialize task to cycle and display time, date, and temperature */
+        ret &= init_floor_monitor();      /* initialize task to monitor floor state */
+        ret &= init_motor();              /* initialize task to monitor the motor */
+        ret &= init_elevator_scheduler(); /* initialize the elevator scheduler */
 
         ret &= init_buttons();
 

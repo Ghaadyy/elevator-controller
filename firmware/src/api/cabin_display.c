@@ -1,10 +1,10 @@
 /**
- * @file    display_time_date_temp.c
+ * @file    cabin_display.c
  * @author  Antoine Karam (antoinekaram1414@gmail.com)
  * @date    2024-12-21
  */
 #include "../main.h"
-#include "display_time_date_temp.h"
+#include "cabin_display.h"
 #include "tempr.h"
 #include "../hardware.h"
 #include "../sched/scheduler.h"
@@ -20,7 +20,7 @@ void show_temperature();
 /*Global variables:*/
 static uint8_t display_cycle = MIN_COUNT;
 
-bool init_display_time_date_temp(void)
+bool init_cabin_display(void)
 {
     return s_task_create(true, S_TASK_NORMAL_PRIORITY, 10000, display_process, NULL, NULL);
 }

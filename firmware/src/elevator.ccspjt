@@ -40,7 +40,7 @@ enabled=0
 chip=1
 D1=
 V1=
-buildcount=351
+buildcount=353
 
 [main.c]
 Type=4
@@ -311,7 +311,7 @@ Count=14
 6=api\tempr
 7=sched\scheduler
 8=drivers\ds1307
-9=api\display_time_date_temp
+9=api\cabin_display
 10=api\floor
 11=api\motor
 12=api\elevator
