@@ -7,11 +7,15 @@ digraph "init_floor_monitor"
   rankdir="LR";
   Node1 [id="Node000001",label="init_floor_monitor",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Initializes a task that monitors the floor state."];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="display_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#ad91d36598ad3d769bd79f51d77874a95",tooltip="Task retrieves global floor state and displays it to 7-segment display."];
+  Node2 [id="Node000002",label="display_direction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#ae26b18afdd49ad7d7ae11200b986d6f1",tooltip="Task that displays the direction in a heartbeat manner."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="get_current_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#a8a2a209f2ca5bf6690bf4f1cc44159f4",tooltip="Get the current floor."];
+  Node3 [id="Node000003",label="get_motor_direction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$motor_8c.html#aaafe24b4c683ca8caa8cfd810ccdfac1",tooltip="Get the motor direction."];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="floor_state_monitor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#a7c9cea41973dd3f1e9f0f2505523bb54",tooltip="Task that monitors the floor stop switches and updates global floor state."];
-  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="s_task_create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#aa30bd78cb4f99124163a56d65a6cf27f",tooltip=" "];
+  Node4 [id="Node000004",label="display_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#ad91d36598ad3d769bd79f51d77874a95",tooltip="Task retrieves global floor state and displays it to 7-segment display."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="get_current_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#ab81d0fee4d8a90dc806bb5ced0230050",tooltip="Get the current floor."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="floor_state_monitor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#a7c9cea41973dd3f1e9f0f2505523bb54",tooltip="Task that monitors the floor stop switches and updates global floor state."];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="s_task_create",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#aa30bd78cb4f99124163a56d65a6cf27f",tooltip=" "];
 }

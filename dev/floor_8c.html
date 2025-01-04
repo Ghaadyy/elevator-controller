@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('floor_8c.html',''); initResizable(); }
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">../main.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="floor_8h_source.html">floor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor_8h_source.html">motor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scheduler_8h_source.html">../sched/scheduler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for floor.c:</div>
@@ -111,6 +112,9 @@ Include dependency graph for floor.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae26b18afdd49ad7d7ae11200b986d6f1" id="r_ae26b18afdd49ad7d7ae11200b986d6f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#ae26b18afdd49ad7d7ae11200b986d6f1">display_direction</a> (<a class="el" href="scheduler_8h.html#a2f698ca92b3c2afe85cf2546cc43a220">s_task_handle_t</a> me, <a class="el" href="scheduler_8h.html#a2a69546ed98cb94a52baf9a4421e65b2">s_task_msg_t</a> **msg, void *arg)</td></tr>
+<tr class="memdesc:ae26b18afdd49ad7d7ae11200b986d6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task that displays the direction in a heartbeat manner.  <br /></td></tr>
+<tr class="separator:ae26b18afdd49ad7d7ae11200b986d6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c9cea41973dd3f1e9f0f2505523bb54" id="r_a7c9cea41973dd3f1e9f0f2505523bb54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#a7c9cea41973dd3f1e9f0f2505523bb54">floor_state_monitor</a> (<a class="el" href="scheduler_8h.html#a2f698ca92b3c2afe85cf2546cc43a220">s_task_handle_t</a> me, <a class="el" href="scheduler_8h.html#a2a69546ed98cb94a52baf9a4421e65b2">s_task_msg_t</a> **msg, void *arg)</td></tr>
 <tr class="memdesc:a7c9cea41973dd3f1e9f0f2505523bb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task that monitors the floor stop switches and updates global floor state.  <br /></td></tr>
 <tr class="separator:a7c9cea41973dd3f1e9f0f2505523bb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,14 +124,14 @@ Functions</h2></td></tr>
 <tr class="memitem:af2aa45cd3f888a21f47b3d4ae6c5bb30" id="r_af2aa45cd3f888a21f47b3d4ae6c5bb30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#af2aa45cd3f888a21f47b3d4ae6c5bb30">init_floor_monitor</a> ()</td></tr>
 <tr class="memdesc:af2aa45cd3f888a21f47b3d4ae6c5bb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a task that monitors the floor state.  <br /></td></tr>
 <tr class="separator:af2aa45cd3f888a21f47b3d4ae6c5bb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2a209f2ca5bf6690bf4f1cc44159f4" id="r_a8a2a209f2ca5bf6690bf4f1cc44159f4"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="floor_8h.html#a250196cf5b65cd539f5c70a40927f499">floor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#a8a2a209f2ca5bf6690bf4f1cc44159f4">get_current_floor</a> ()</td></tr>
-<tr class="memdesc:a8a2a209f2ca5bf6690bf4f1cc44159f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current floor.  <br /></td></tr>
-<tr class="separator:a8a2a209f2ca5bf6690bf4f1cc44159f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81d0fee4d8a90dc806bb5ced0230050" id="r_ab81d0fee4d8a90dc806bb5ced0230050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="floor_8h.html#a5d8e8d0420f1a3c424f13c8492624f4a">floor_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#ab81d0fee4d8a90dc806bb5ced0230050">get_current_floor</a> ()</td></tr>
+<tr class="memdesc:ab81d0fee4d8a90dc806bb5ced0230050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current floor.  <br /></td></tr>
+<tr class="separator:ab81d0fee4d8a90dc806bb5ced0230050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:addefe510b892cc5e6050082fd6d10983" id="r_addefe510b892cc5e6050082fd6d10983"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="floor_8h.html#a250196cf5b65cd539f5c70a40927f499">floor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#addefe510b892cc5e6050082fd6d10983">current_floor</a></td></tr>
-<tr class="separator:addefe510b892cc5e6050082fd6d10983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab646ff5d9d44dacb3773c7c32532bb55" id="r_ab646ff5d9d44dacb3773c7c32532bb55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="floor_8h.html#a5d8e8d0420f1a3c424f13c8492624f4a">floor_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="floor_8c.html#ab646ff5d9d44dacb3773c7c32532bb55">current_floor</a> = <a class="el" href="floor_8h.html#a250196cf5b65cd539f5c70a40927f499a89716b5ce60498ed275682d82d718fca">GF</a></td></tr>
+<tr class="separator:ab646ff5d9d44dacb3773c7c32532bb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the floor monitor API. </p>
@@ -136,6 +140,60 @@ Variables</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2024-12-28</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae26b18afdd49ad7d7ae11200b986d6f1" name="ae26b18afdd49ad7d7ae11200b986d6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26b18afdd49ad7d7ae11200b986d6f1">&#9670;&#160;</a></span>display_direction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void display_direction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="scheduler_8h.html#a2f698ca92b3c2afe85cf2546cc43a220">s_task_handle_t</a>&#160;</td>
+          <td class="paramname"><em>me</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="scheduler_8h.html#a2a69546ed98cb94a52baf9a4421e65b2">s_task_msg_t</a> **&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task that displays the direction in a heartbeat manner. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">me</td><td></td></tr>
+    <tr><td class="paramname">msg</td><td></td></tr>
+    <tr><td class="paramname">arg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="floor_8c_ae26b18afdd49ad7d7ae11200b986d6f1_cgraph.png" border="0" usemap="#afloor_8c_ae26b18afdd49ad7d7ae11200b986d6f1_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="floor_8c_ae26b18afdd49ad7d7ae11200b986d6f1_icgraph.png" border="0" usemap="#afloor_8c_ae26b18afdd49ad7d7ae11200b986d6f1_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 <a id="ad91d36598ad3d769bd79f51d77874a95" name="ad91d36598ad3d769bd79f51d77874a95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad91d36598ad3d769bd79f51d77874a95">&#9670;&#160;</a></span>display_floor()</h2>
 
@@ -239,14 +297,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8a2a209f2ca5bf6690bf4f1cc44159f4" name="a8a2a209f2ca5bf6690bf4f1cc44159f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a2a209f2ca5bf6690bf4f1cc44159f4">&#9670;&#160;</a></span>get_current_floor()</h2>
+<a id="ab81d0fee4d8a90dc806bb5ced0230050" name="ab81d0fee4d8a90dc806bb5ced0230050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81d0fee4d8a90dc806bb5ced0230050">&#9670;&#160;</a></span>get_current_floor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="floor_8h.html#a250196cf5b65cd539f5c70a40927f499">floor</a> get_current_floor </td>
+          <td class="memname"><a class="el" href="floor_8h.html#a5d8e8d0420f1a3c424f13c8492624f4a">floor_t</a> get_current_floor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -259,7 +317,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="floor_8c_a8a2a209f2ca5bf6690bf4f1cc44159f4_icgraph.png" border="0" usemap="#afloor_8c_a8a2a209f2ca5bf6690bf4f1cc44159f4_icgraph" alt=""/></div>
+<div class="center"><img src="floor_8c_ab81d0fee4d8a90dc806bb5ced0230050_icgraph.png" border="0" usemap="#afloor_8c_ab81d0fee4d8a90dc806bb5ced0230050_icgraph" alt=""/></div>
 </div>
 
 </div>
@@ -297,14 +355,14 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="addefe510b892cc5e6050082fd6d10983" name="addefe510b892cc5e6050082fd6d10983"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addefe510b892cc5e6050082fd6d10983">&#9670;&#160;</a></span>current_floor</h2>
+<a id="ab646ff5d9d44dacb3773c7c32532bb55" name="ab646ff5d9d44dacb3773c7c32532bb55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab646ff5d9d44dacb3773c7c32532bb55">&#9670;&#160;</a></span>current_floor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="floor_8h.html#a250196cf5b65cd539f5c70a40927f499">floor</a> current_floor</td>
+          <td class="memname"><a class="el" href="floor_8h.html#a5d8e8d0420f1a3c424f13c8492624f4a">floor_t</a> current_floor = <a class="el" href="floor_8h.html#a250196cf5b65cd539f5c70a40927f499a89716b5ce60498ed275682d82d718fca">GF</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

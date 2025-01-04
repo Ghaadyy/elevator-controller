@@ -5,5 +5,6 @@ var searchData=
   ['date_2',['date',['../structdate__info.html#a4fa288133363876774e836327ea74858',1,'date_info']]],
   ['day_3',['day',['../structdate__info.html#ae4708d745777f674291acd9ef2fcc512',1,'date_info']]],
   ['down_5fpins_4',['down_pins',['../motor_8c.html#a50a7e746b359ce8b0426fd672c38d7ce',1,'motor.c']]],
-  ['dummy_5',['dummy',['../struct__systeminfo.html#ad73f01954f437647a381fc3bbd70e2cd',1,'_systeminfo']]]
+  ['down_5fq_5',['down_q',['../elevator_8c.html#adcdeec98d71348ec1c46d9b2e514db79',1,'elevator.c']]],
+  ['dummy_6',['dummy',['../struct__systeminfo.html#ad73f01954f437647a381fc3bbd70e2cd',1,'_systeminfo']]]
 ];

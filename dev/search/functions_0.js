@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['check_5fhas_5fapproached_5ftarget_5ffloor_0',['check_has_approached_target_floor',['../motor_8c.html#a288cbec26c70115d24279402a9f7346e',1,'motor.c']]],
-  ['check_5fhas_5farrived_5fdestination_1',['check_has_arrived_destination',['../motor_8c.html#a01522890a013e98379a4efd5cb7afa7d',1,'motor.c']]],
-  ['check_5fhas_5fleft_5fstart_5ffloor_2',['check_has_left_start_floor',['../motor_8c.html#a83ad2db7cf38e8a3eb2525bc10945afe',1,'motor.c']]]
+  ['add_5fcabin_5frequest_0',['add_cabin_request',['../elevator_8c.html#a82da63712fcbe1eeac950a3c54205042',1,'add_cabin_request(floor_t dst_floor):&#160;elevator.c'],['../elevator_8h.html#a82da63712fcbe1eeac950a3c54205042',1,'add_cabin_request(floor_t dst_floor):&#160;elevator.c']]],
+  ['add_5ffloor_5frequest_1',['add_floor_request',['../elevator_8c.html#ab03b23edea47f01c3e4247b4d462ebcd',1,'add_floor_request(floor_t dst_floor, direction_t dir):&#160;elevator.c'],['../elevator_8h.html#ab03b23edea47f01c3e4247b4d462ebcd',1,'add_floor_request(floor_t dst_floor, direction_t dir):&#160;elevator.c']]],
+  ['add_5fto_5fdown_5fq_2',['add_to_down_q',['../elevator_8c.html#a7591b9779803fca7697b74a7270427d7',1,'elevator.c']]],
+  ['add_5fto_5fup_5fq_3',['add_to_up_q',['../elevator_8c.html#ac28bd04de895930003c7ff9cb99a80be',1,'elevator.c']]]
 ];

@@ -13,7 +13,7 @@ digraph "monitor_motor"
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="check_has_left_start\l_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$motor_8c.html#a83ad2db7cf38e8a3eb2525bc10945afe",tooltip="Checks if the motor has left the starting floor."];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="get_current_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#a8a2a209f2ca5bf6690bf4f1cc44159f4",tooltip="Get the current floor."];
+  Node5 [id="Node000005",label="get_current_floor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$floor_8c.html#ab81d0fee4d8a90dc806bb5ced0230050",tooltip="Get the current floor."];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="s_task_suspend",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler_8c.html#a565b464dbec53eacf8d7099fefa0ad72",tooltip=" "];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
