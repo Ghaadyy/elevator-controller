@@ -32,25 +32,30 @@ bool init_motor(void)
 
 void goto_floor(uint8_t target_floor)
 {
-    start_floor = get_current_floor(); /* Record the current floor as the starting point */
-
-    end_floor = target_floor; /* Set the target floor */
+    enum floor current_floor = get_current_floor(); /* Get the floor which the elevator is currently at */
 
     enum direction current_direction = get_motor_direction(); /* Get current motor direction */
 
     enum direction new_direction = NONE; /* Determine the new direction */
-    if (start_floor < end_floor)
+    if (current_floor < target_floor)
     { /* Move upward */
         new_direction = UP;
     }
-    else if (start_floor > end_floor)
+    else if (current_floor > target_floor)
     { /* Move downward */
         new_direction = DOWN;
+    }
+
+    /* Record the current floor as the new starting point only when the motor is idle */
+    if (current_direction == NONE)
+    {
+        start_floor = current_floor;
     }
 
     /* Continue only if the motor is not moving or moving in the same direction */
     if (current_direction == NONE || current_direction == new_direction)
     {
+        end_floor = target_floor; /* Set the target floor */
         set_motor_direction(new_direction);
         s_task_resume(monitor_motor_hndl, true); /* Immediately resume the task */
     }
