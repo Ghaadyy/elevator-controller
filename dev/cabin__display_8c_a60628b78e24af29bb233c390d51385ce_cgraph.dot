@@ -1,0 +1,15 @@
+digraph "show_time"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="show_time",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Display the current time in (HH:MM) format."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="display_value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8c.html#a1c3320d2f19fbf616c4be1c441dceb0b",tooltip="Display a 2-digit value across two 7-segment displays."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="get_hour",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8c.html#ac584d2e0b9c3313f3962e20e33da09e9",tooltip="Get the hour in BCD format."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="get_minutes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8c.html#a186119669a4f58641ff4fbb96c90c580",tooltip="Get the minutes in BCD format."];
+}
