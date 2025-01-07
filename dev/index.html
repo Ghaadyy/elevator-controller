@@ -94,7 +94,62 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Elevator Controller Firmware </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> <em>TODO: Write documentation</em> </p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> <em>Authors: Antoine Karam and Ghady Youssef</em></p>
+<p><em>Submitted in partial fulfillment of the Firmware Design course</em></p>
+<p>This project designs a 4-floor elevator controller written in C.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Assignment requirements</h1>
+<p><b>Floor information</b></p>
+<p>On each floor there are:</p>
+<ul>
+<li>One 7-segment-digit display for floor number indication.</li>
+<li>One UP button (except on F3).</li>
+<li>One DOWN button (except on GF).</li>
+<li>UP/DOWN LED arrow indication.</li>
+<li>Three limit switches for cabin feedback:<ul>
+<li>One indicates the STOP position.</li>
+<li>One indicates SPEED CHANGE when going UP (except of F3).</li>
+<li>One indicates SPEED CHANGE when going DOWN (except on GF).</li>
+</ul>
+</li>
+</ul>
+<p><b>Cabin information</b></p>
+<p>Cabin interior:</p>
+<ul>
+<li>Four buttons each for a floor.</li>
+<li>One 7-segment-digit display for floor number indication.</li>
+<li>Four 7-segment-digit display intended to show time (HH:MM), date (DD MM) and temperature (TT dC) in sequence, 10 seconds apart.<ul>
+<li>Two options for the calendar implementation aka Real-Time Clock (RTC):<ul>
+<li>Either you implement it by software, or</li>
+<li>Use an I2C-based external RTC (datasheet included).<ul>
+<li><b>A bonus will be added when using external RTC.</b></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The temperature is delivered by the famous LM35 analog sensor.</li>
+<li>Two-level speed control.</li>
+<li>Dual direction control.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Getting Started</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Prerequisites</h2>
+<p>Ensure you have the following components:</p>
+<ol type="1">
+<li><b>Proteus</b> to run the simulation.</li>
+<li><b>CCS C Compiler</b> to build the firmware.</li>
+<li><b>VS Code</b> if you want to make any changes to the code (optional but recommended over the CCS C Compiler editor).</li>
+<li>Install <code>clang-format</code> and <code>cppcheck</code> to ensure the CI pipeline passes.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Project Structure</h1>
+<p>The <code>firmware/src</code> directory contains the source code which will run on the microcontroller. It contains the scheduler in <code>sched</code>, <code>drivers</code> for the LM35 and DS1307, and the <code>api</code> which contains exposed functions to manipulate floor sensors, control the motor, and manage the scheduler.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Screenshots</h1>
+<p><img src="docs/assets/sim.png" alt="Simulation" class="inline"/> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

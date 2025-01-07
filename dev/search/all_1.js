@@ -21,5 +21,6 @@ var searchData=
   ['add_5fto_5fdown_5fq_18',['add_to_down_q',['../elevator_8c.html#a7591b9779803fca7697b74a7270427d7',1,'elevator.c']]],
   ['add_5fto_5fq_5ffn_19',['add_to_q_fn',['../elevator_8c.html#acb35f6fa4f53b683e76b07e5322ac037',1,'elevator.c']]],
   ['add_5fto_5fup_5fq_20',['add_to_up_q',['../elevator_8c.html#ac28bd04de895930003c7ff9cb99a80be',1,'elevator.c']]],
-  ['average_5fvalue_21',['average_value',['../struct__adc__info.html#a910f20b6c72780ad2b1cf76826e3cc3e',1,'_adc_info']]]
+  ['assignment_20requirements_21',['Assignment requirements',['../index.html#autotoc_md1',1,'']]],
+  ['average_5fvalue_22',['average_value',['../struct__adc__info.html#a910f20b6c72780ad2b1cf76826e3cc3e',1,'_adc_info']]]
 ];

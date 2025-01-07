@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Elevator Controller", "index.html", [
-    [ "Elevator Controller Firmware", "index.html", null ],
+    [ "Elevator Controller Firmware", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc_8c.html",
-"scheduler_8c.html#ae966cc686f50f0fb15e0b84aef2ff257"
+"scheduler_8c.html#ad2e5049580a02d26d622480a687dee1f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
