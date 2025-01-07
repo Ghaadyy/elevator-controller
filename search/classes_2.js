@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mailbox_0',['mailbox',['../structmailbox.html',1,'']]]
+  ['floor_5fqueue_0',['floor_queue',['../structfloor__queue.html',1,'']]]
 ];

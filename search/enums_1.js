@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['s_5ftask_5fmode_0',['s_task_mode',['../scheduler_8c.html#acfc0de02d6756d29817dcc36b8794d6f',1,'scheduler.c']]],
-  ['s_5ftask_5fpriority_1',['s_task_priority',['../scheduler_8h.html#a492f22bd4fd44d56820e7abd735edc89',1,'scheduler.h']]]
+  ['direction_0',['direction',['../motor_8h.html#a99f26e6ee9fcd62f75203b5402df8098',1,'motor.h']]]
 ];

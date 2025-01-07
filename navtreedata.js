@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Elevator Controller", "index.html", [
-    [ "Elevator Controller Firmware", "index.html", null ],
+    [ "Elevator Controller Firmware", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -37,7 +37,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -52,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adc_8c.html",
-"timer_8c.html#a1a5b52c1e5e4f30bdd56f4d82e29adba"
+"scheduler_8c.html#ad2e5049580a02d26d622480a687dee1f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
