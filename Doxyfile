@@ -33,6 +33,7 @@ INDEX_PAGE             = index.html
 GENERATE_TREEVIEW      = YES
 DISABLE_INDEX 		   = NO
 FULL_SIDEBAR		   = NO
+IMAGE_PATH			   = docs/assets
 
 # LaTeX output settings
 GENERATE_LATEX         = NO
