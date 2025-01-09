@@ -1,7 +1,12 @@
 /**
- * @file    ds1307.h
- * @author  Ghaadyy
- * @date    21/12/2024
+ * @file ds1307.h
+ * @author Ghady Youssef (ghadyyi@gmail.com)
+ * @brief The DS1307 driver.
+ * @version 0.2
+ * @date 2024-12-21
+ *
+ * @copyright Copyright (c) 2024
+ *
  */
 
 #ifndef _DS1307_H
@@ -20,21 +25,6 @@
 #define MONTH_ADDR (0x05)
 #define YEAR_ADDR (0x06)
 
-typedef struct date_info
-{
-    uint8_t day;   /*!< The day value represented in BCD */
-    uint8_t date;  /*!< The date value represented in BCD */
-    uint8_t month; /*!< The month value represented in BCD */
-    uint8_t year;  /*!< The year value represented in BCD */
-} date_info_t;
-
-typedef struct time_info
-{
-    uint16_t hours;   /*!< The hours value represented in BCD */
-    uint16_t minutes; /*!< The minutes value represented in BCD */
-    uint16_t seconds; /*!< The seconds value represented in BCD */
-} time_info_t;
-
 /**
  * @brief Initializes the DS1307 and sets the required register values.
  *
@@ -44,82 +34,13 @@ typedef struct time_info
 bool init_rtc(void);
 
 /**
- * @brief Get the date in BCD format
+ * @brief Reads a DS1307 register value.
  *
- * @return true
- * @return false
+ * @param reg_addr The register's address.
+ * @param val Pointer to the extracted value
+ * @return true if read operation was successfull
+ * @return false otherwise
  */
-bool get_full_date(date_info_t *bcd_date);
-
-/**
- * @brief Get the time in BCD format
- *
- * @return true
- * @return false
- */
-bool get_time(time_info_t *bcd_time);
-
-/**
- * @brief Get the hour in BCD format
- *
- * @param hour
- * @return true
- * @return false
- */
-bool get_hour(uint8_t *hour);
-
-/**
- * @brief Get the minutes in BCD format
- *
- * @param minutes
- * @return true
- * @return false
- */
-bool get_minutes(uint8_t *minutes);
-
-/**
- * @brief Get the seconds in BCD format
- *
- * @param seconds
- * @return true
- * @return false
- */
-bool get_seconds(uint8_t *seconds);
-
-/**
- * @brief Get the date in BCD format
- *
- * @param date
- * @return true
- * @return false
- */
-bool get_date(uint8_t *date);
-
-/**
- * @brief Get the day in BCD format
- *
- * @param day
- * @return true
- * @return false
- */
-bool get_day(uint8_t *day);
-
-/**
- * @brief Get the month in BCD format
- *
- * @param month
- * @return true
- * @return false
- */
-bool get_month(uint8_t *month);
-
-/**
- * @brief Get the year in BCD format
- *
- * @param year
- * @return true
- * @return false
- */
-bool get_year(uint8_t *year);
+bool read_reg(uint8_t reg_addr, uint8_t *val);
 
 #endif
