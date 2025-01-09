@@ -17,12 +17,14 @@ void show_time();
 void show_date();
 void show_temperature();
 
+#define DISPLAY_COOLDOWN (10)
+
 /*Global variables:*/
 static uint8_t display_cycle = MIN_COUNT;
 
 bool init_cabin_display(void)
 {
-    return s_task_create(true, S_TASK_NORMAL_PRIORITY, 10000, display_process, NULL, NULL);
+    return s_task_create(true, S_TASK_LOW_PRIORITY, 1000, display_process, NULL, NULL);
 }
 
 /**
@@ -34,6 +36,8 @@ bool init_cabin_display(void)
  */
 void display_process(s_task_handle_t me, s_task_msg_t **msg, void *arg)
 {
+    static uint8_t counter = 0;
+
     switch (display_cycle)
     {
     case 1:
@@ -49,7 +53,12 @@ void display_process(s_task_handle_t me, s_task_msg_t **msg, void *arg)
         show_time(); /* Default to displaying time if an invalid option is encountered */
     }
 
-    display_cycle = (display_cycle % MAX_COUNT) + 1; /* Cycle through the options */
+    counter++;
+    if (counter == DISPLAY_COOLDOWN)
+    {
+        display_cycle = (display_cycle % MAX_COUNT) + 1; /* Cycle through the options */
+        counter = 0;
+    }
 }
 
 /**
@@ -73,14 +82,23 @@ void display_value(uint8_t value, uint8_t start_pin)
  */
 void show_time()
 {
+    static bool separator_display = true;
     uint8_t hour, minutes;
     bool success = get_hour(&hour) & get_minutes(&minutes);
 
     if (success)
     {
-        display_value(hour, PIN_E0);    /* Display hours*/
-        output_high(PIN_G4);            /* Turn on separator ':' */
+        display_value(hour, PIN_E0); /* Display hours*/
+        if (separator_display)
+        {
+            output_high(PIN_G4); /* Turn on separator ':' */
+        }
+        else
+        {
+            output_low(PIN_G4); /* Turn off separator ':' */
+        }
         display_value(minutes, PIN_D0); /* Display minutes */
+        separator_display = !separator_display;
     }
 }
 
