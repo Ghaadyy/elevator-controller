@@ -8,7 +8,7 @@
 #include "tempr.h"
 #include "../hardware.h"
 #include "../sched/scheduler.h"
-#include "../drivers/ds1307.h"
+#include "date.h"
 
 /*Local prototypes:*/
 void display_process(s_task_handle_t me, s_task_msg_t **msg, void *arg);
