@@ -97,8 +97,10 @@ $(document).ready(function(){initNavTree('ds1307_8c.html',''); initResizable(); 
   <div class="headertitle"><div class="title">ds1307.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The DS1307 driver.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="scheduler_8h_source.html">../sched/scheduler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ds1307_8h_source.html">ds1307.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ds1307.c:</div>
@@ -118,37 +120,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4e073adeb5e25eea921a7a16a1d807e" id="r_ad4e073adeb5e25eea921a7a16a1d807e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#ad4e073adeb5e25eea921a7a16a1d807e">init_rtc</a> (void)</td></tr>
 <tr class="memdesc:ad4e073adeb5e25eea921a7a16a1d807e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the DS1307 and sets the required register values.  <br /></td></tr>
 <tr class="separator:ad4e073adeb5e25eea921a7a16a1d807e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cbcbb331fb92c6c7ed9b202b2290bff" id="r_a9cbcbb331fb92c6c7ed9b202b2290bff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#a9cbcbb331fb92c6c7ed9b202b2290bff">get_full_date</a> (<a class="el" href="ds1307_8h.html#ac1c9e81dca591e9bce615c172b4cb4f5">date_info_t</a> *bcd_date)</td></tr>
-<tr class="memdesc:a9cbcbb331fb92c6c7ed9b202b2290bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date in BCD format.  <br /></td></tr>
-<tr class="separator:a9cbcbb331fb92c6c7ed9b202b2290bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d717c640092e205d8e191fddaa2f160" id="r_a3d717c640092e205d8e191fddaa2f160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#a3d717c640092e205d8e191fddaa2f160">get_time</a> (<a class="el" href="ds1307_8h.html#a4093e9bc33f634a7ed7fd1d7147c09c3">time_info_t</a> *bcd_time)</td></tr>
-<tr class="memdesc:a3d717c640092e205d8e191fddaa2f160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time in BCD format.  <br /></td></tr>
-<tr class="separator:a3d717c640092e205d8e191fddaa2f160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac584d2e0b9c3313f3962e20e33da09e9" id="r_ac584d2e0b9c3313f3962e20e33da09e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#ac584d2e0b9c3313f3962e20e33da09e9">get_hour</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *hour)</td></tr>
-<tr class="memdesc:ac584d2e0b9c3313f3962e20e33da09e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hour in BCD format.  <br /></td></tr>
-<tr class="separator:ac584d2e0b9c3313f3962e20e33da09e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186119669a4f58641ff4fbb96c90c580" id="r_a186119669a4f58641ff4fbb96c90c580"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#a186119669a4f58641ff4fbb96c90c580">get_minutes</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *minutes)</td></tr>
-<tr class="memdesc:a186119669a4f58641ff4fbb96c90c580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minutes in BCD format.  <br /></td></tr>
-<tr class="separator:a186119669a4f58641ff4fbb96c90c580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82f0b57f8db406f6e5eec165524ef9c" id="r_ae82f0b57f8db406f6e5eec165524ef9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#ae82f0b57f8db406f6e5eec165524ef9c">get_seconds</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *seconds)</td></tr>
-<tr class="memdesc:ae82f0b57f8db406f6e5eec165524ef9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the seconds in BCD format.  <br /></td></tr>
-<tr class="separator:ae82f0b57f8db406f6e5eec165524ef9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad78a6c16e5ff00c4a28f6e2d10bc7f18" id="r_ad78a6c16e5ff00c4a28f6e2d10bc7f18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#ad78a6c16e5ff00c4a28f6e2d10bc7f18">get_day</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *day)</td></tr>
-<tr class="memdesc:ad78a6c16e5ff00c4a28f6e2d10bc7f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the day in BCD format.  <br /></td></tr>
-<tr class="separator:ad78a6c16e5ff00c4a28f6e2d10bc7f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8caf51269a00dcd8d51c4f0118543abf" id="r_a8caf51269a00dcd8d51c4f0118543abf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#a8caf51269a00dcd8d51c4f0118543abf">get_date</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *date)</td></tr>
-<tr class="memdesc:a8caf51269a00dcd8d51c4f0118543abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date in BCD format.  <br /></td></tr>
-<tr class="separator:a8caf51269a00dcd8d51c4f0118543abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2652d27e01e91f3af49843b6dbecd240" id="r_a2652d27e01e91f3af49843b6dbecd240"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#a2652d27e01e91f3af49843b6dbecd240">get_month</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *month)</td></tr>
-<tr class="memdesc:a2652d27e01e91f3af49843b6dbecd240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the month in BCD format.  <br /></td></tr>
-<tr class="separator:a2652d27e01e91f3af49843b6dbecd240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af88ff7566eb67a9546145075fd83bcb5" id="r_af88ff7566eb67a9546145075fd83bcb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#af88ff7566eb67a9546145075fd83bcb5">get_year</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *year)</td></tr>
-<tr class="memdesc:af88ff7566eb67a9546145075fd83bcb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the year in BCD format.  <br /></td></tr>
-<tr class="separator:af88ff7566eb67a9546145075fd83bcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eabf08e23fb4e463ca64022323f04d2" id="r_a6eabf08e23fb4e463ca64022323f04d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ds1307_8c.html#a6eabf08e23fb4e463ca64022323f04d2">read_reg</a> (<a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> reg_addr, <a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *val)</td></tr>
+<tr class="memdesc:a6eabf08e23fb4e463ca64022323f04d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a DS1307 register value.  <br /></td></tr>
+<tr class="separator:a6eabf08e23fb4e463ca64022323f04d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Ghaadyy </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>21/12/2024 </dd></dl>
+<div class="textblock"><p>The DS1307 driver. </p>
+<dl class="section author"><dt>Author</dt><dd>Ghady Youssef (<a href="#" onclick="location.href='mai'+'lto:'+'gha'+'dy'+'yi@'+'gm'+'ail'+'.c'+'om'; return false;">ghady<span class="obfuscator">.nosp@m.</span>yi@g<span class="obfuscator">.nosp@m.</span>mail.<span class="obfuscator">.nosp@m.</span>com</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2024-12-21</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a32f59f67b6d8fe4a261b378e32b09713" name="a32f59f67b6d8fe4a261b378e32b09713"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32f59f67b6d8fe4a261b378e32b09713">&#9670;&#160;</a></span>_AND_ACK</h2>
@@ -181,290 +162,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a8caf51269a00dcd8d51c4f0118543abf" name="a8caf51269a00dcd8d51c4f0118543abf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8caf51269a00dcd8d51c4f0118543abf">&#9670;&#160;</a></span>get_date()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_date </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>date</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the date in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">date</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_a8caf51269a00dcd8d51c4f0118543abf_icgraph.png" border="0" usemap="#ads1307_8c_a8caf51269a00dcd8d51c4f0118543abf_icgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="ad78a6c16e5ff00c4a28f6e2d10bc7f18" name="ad78a6c16e5ff00c4a28f6e2d10bc7f18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad78a6c16e5ff00c4a28f6e2d10bc7f18">&#9670;&#160;</a></span>get_day()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_day </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>day</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the day in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">day</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-
-</div>
-</div>
-<a id="a9cbcbb331fb92c6c7ed9b202b2290bff" name="a9cbcbb331fb92c6c7ed9b202b2290bff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cbcbb331fb92c6c7ed9b202b2290bff">&#9670;&#160;</a></span>get_full_date()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_full_date </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="ds1307_8h.html#ac1c9e81dca591e9bce615c172b4cb4f5">date_info_t</a> *&#160;</td>
-          <td class="paramname"><em>bcd_date</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the date in BCD format. </p>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_a9cbcbb331fb92c6c7ed9b202b2290bff_cgraph.png" border="0" usemap="#ads1307_8c_a9cbcbb331fb92c6c7ed9b202b2290bff_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="ac584d2e0b9c3313f3962e20e33da09e9" name="ac584d2e0b9c3313f3962e20e33da09e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac584d2e0b9c3313f3962e20e33da09e9">&#9670;&#160;</a></span>get_hour()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_hour </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>hour</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the hour in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hour</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_ac584d2e0b9c3313f3962e20e33da09e9_icgraph.png" border="0" usemap="#ads1307_8c_ac584d2e0b9c3313f3962e20e33da09e9_icgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a186119669a4f58641ff4fbb96c90c580" name="a186119669a4f58641ff4fbb96c90c580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a186119669a4f58641ff4fbb96c90c580">&#9670;&#160;</a></span>get_minutes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_minutes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>minutes</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the minutes in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minutes</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_a186119669a4f58641ff4fbb96c90c580_icgraph.png" border="0" usemap="#ads1307_8c_a186119669a4f58641ff4fbb96c90c580_icgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a2652d27e01e91f3af49843b6dbecd240" name="a2652d27e01e91f3af49843b6dbecd240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2652d27e01e91f3af49843b6dbecd240">&#9670;&#160;</a></span>get_month()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_month </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>month</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the month in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">month</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_a2652d27e01e91f3af49843b6dbecd240_icgraph.png" border="0" usemap="#ads1307_8c_a2652d27e01e91f3af49843b6dbecd240_icgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="ae82f0b57f8db406f6e5eec165524ef9c" name="ae82f0b57f8db406f6e5eec165524ef9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82f0b57f8db406f6e5eec165524ef9c">&#9670;&#160;</a></span>get_seconds()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_seconds </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>seconds</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the seconds in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">seconds</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_ae82f0b57f8db406f6e5eec165524ef9c_icgraph.png" border="0" usemap="#ads1307_8c_ae82f0b57f8db406f6e5eec165524ef9c_icgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a3d717c640092e205d8e191fddaa2f160" name="a3d717c640092e205d8e191fddaa2f160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d717c640092e205d8e191fddaa2f160">&#9670;&#160;</a></span>get_time()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_time </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="ds1307_8h.html#a4093e9bc33f634a7ed7fd1d7147c09c3">time_info_t</a> *&#160;</td>
-          <td class="paramname"><em>bcd_time</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the time in BCD format. </p>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="ds1307_8c_a3d717c640092e205d8e191fddaa2f160_cgraph.png" border="0" usemap="#ads1307_8c_a3d717c640092e205d8e191fddaa2f160_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="af88ff7566eb67a9546145075fd83bcb5" name="af88ff7566eb67a9546145075fd83bcb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af88ff7566eb67a9546145075fd83bcb5">&#9670;&#160;</a></span>get_year()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool get_year </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>year</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the year in BCD format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">year</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
-<dd>
-false </dd></dl>
-
-</div>
-</div>
 <a id="ad4e073adeb5e25eea921a7a16a1d807e" name="ad4e073adeb5e25eea921a7a16a1d807e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4e073adeb5e25eea921a7a16a1d807e">&#9670;&#160;</a></span>init_rtc()</h2>
 
@@ -489,6 +186,51 @@ false </dd></dl>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="ds1307_8c_ad4e073adeb5e25eea921a7a16a1d807e_icgraph.png" border="0" usemap="#ads1307_8c_ad4e073adeb5e25eea921a7a16a1d807e_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a6eabf08e23fb4e463ca64022323f04d2" name="a6eabf08e23fb4e463ca64022323f04d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eabf08e23fb4e463ca64022323f04d2">&#9670;&#160;</a></span>read_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool read_reg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>reg_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="target__port_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a DS1307 register value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reg_addr</td><td>The register's address. </td></tr>
+    <tr><td class="paramname">val</td><td>Pointer to the extracted value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if read operation was successfull </dd>
+<dd>
+false otherwise </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="ds1307_8c_a6eabf08e23fb4e463ca64022323f04d2_icgraph.png" border="0" usemap="#ads1307_8c_a6eabf08e23fb4e463ca64022323f04d2_icgraph" alt=""/></div>
 </div>
 
 </div>
