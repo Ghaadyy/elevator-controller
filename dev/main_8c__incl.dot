@@ -35,7 +35,7 @@ digraph "firmware/src/main.c"
   Node14 [id="Node000014",label="timer.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$timer_8h.html",tooltip=" "];
   Node14 -> Node11 [id="edge16_Node000014_Node000011",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node15 [id="edge17_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
-  Node15 [id="Node000015",label="drivers/ds1307.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8h.html",tooltip=" "];
+  Node15 [id="Node000015",label="drivers/ds1307.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8h.html",tooltip="The DS1307 driver."];
   Node1 -> Node16 [id="edge18_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
   Node16 [id="Node000016",label="api/cabin_display.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$cabin__display_8h.html",tooltip=" "];
   Node1 -> Node17 [id="edge19_Node000001_Node000017",color="steelblue1",style="solid",tooltip=" "];

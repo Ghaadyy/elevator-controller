@@ -32,5 +32,5 @@ digraph "firmware/src/api/cabin_display.c"
   Node13 [id="Node000013",label="../scheduler_options.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$scheduler__options_8h.html",tooltip=" "];
   Node12 -> Node4 [id="edge14_Node000012_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node14 [id="edge15_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="../drivers/ds1307.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$ds1307_8h.html",tooltip=" "];
+  Node14 [id="Node000014",label="date.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$date_8h.html",tooltip=" "];
 }

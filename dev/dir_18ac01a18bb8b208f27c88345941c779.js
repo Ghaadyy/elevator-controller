@@ -4,6 +4,8 @@ var dir_18ac01a18bb8b208f27c88345941c779 =
     [ "buttons.h", "buttons_8h.html", "buttons_8h" ],
     [ "cabin_display.c", "cabin__display_8c.html", "cabin__display_8c" ],
     [ "cabin_display.h", "cabin__display_8h.html", "cabin__display_8h" ],
+    [ "date.c", "date_8c.html", "date_8c" ],
+    [ "date.h", "date_8h.html", "date_8h" ],
     [ "elevator.c", "elevator_8c.html", "elevator_8c" ],
     [ "elevator.h", "elevator_8h.html", "elevator_8h" ],
     [ "floor.c", "floor_8c.html", "floor_8c" ],
